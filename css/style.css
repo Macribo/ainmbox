@@ -1,6 +1,7 @@
-*{}
-html{}
-body{
-  color:green;
-  background-color:rgb(36, 31, 31);
+
+.amergin{
+
+  display:none;
+  
+  /* border:5px solid blue; */
 }
