@@ -3,7 +3,6 @@
 
 <head>
 
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -23,22 +22,14 @@
   <!-- <header></header>
   <h1>Fáilte</h1> -->
   <div class="container-fluid">
-
-    <!-- 
     <div class="row">
-      <div class="col-1">
 
-      </div> -->
-    <div class="row">
-      <div class="col">
-        <image src="./images/backgrounds/g.png">
-          <!-- <image src="https://i.imgur.com/qL8GVwh.png"> -->
+      <!-- <div class="col-12"> -->
+      <div id="holdImg">
+        <image id="bg-img1" src="./images/backgrounds/g.png">
       </div>
-
-
-      <div class="amergin">
-
-        <div id="carousel" class="carousel slide">
+      <div id="holdSlide">
+        <div id="carousel" class="carousel slide carousel-fade">
           <div class="carousel-inner">
             <div class="carousel-item active" id="first">
               <img class="d-block w-100 " src="./images/About1/00.png" alt="First slide">
@@ -53,7 +44,7 @@
               <img class="d-block w-100" src="./images/About1/04.png" alt="">
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" id="thomas">
               <img class="d-block w-100" src="./images/About1/05.png" alt="">
             </div>
             <div class="carousel-item">
@@ -134,30 +125,33 @@
             <div class="carousel-item">
               <img class="d-block w-100" src="./images/About1/31.png" alt="">
             </div>
-
           </div>
+          <!-- </div> -->
         </div>
-
       </div>
-      <!-- 
-      <div class="col-1">
-      </div>
-    </div> -->
     </div>
 
 
+    <div class="row">
+      <div class="col-6">
+      </div>
+      <div class="col-6">
+        <button type="button" id="about" class="about btn btn-info">about
+        </button>
+
+        <button type="button" id="start" class="start btn btn-info">start
+        </button>
+      </div>
+    </div>
     <div class="row" id="road">
 
-      <div class="col">
-        <image src="./images/backgrounds/bg_0.png">
-          <button type="button" id="about" class="about btn btn-info">about
-          </button>
-          <button type="button" id="start" class="start btn btn-info">start
-          </button>
-      </div>
+
+      <image src="./images/backgrounds/bg_0.png">
     </div>
   </div>
+  </div>
 
+  <link rel="stylesheet" href="./css/animate.min.css">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"

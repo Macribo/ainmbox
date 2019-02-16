@@ -1,18 +1,17 @@
 *{}
 html{}
 body{
-background-image:url("https://i.imgur.com/qL8GVwh.png");
+background-image:url("../images/backgrounds/bg_1.png");
 background-size:cover;
   overflow:hidden;
   color:green;
  
 }
-#splash{
+.col{
 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top:10%;
 
 /*   
   background-repeat:no-repeat;
@@ -67,21 +66,61 @@ padding-top:10%;
 /* z-index:600; */
 }
 
-.amergin{
+/* .amergin{
   position:fixed;
   display:block;
-  opacity:0;
   background-repeat:no-repeat;
   padding:10px;
   border:10px;
   margin:0% 10% 3% 10%;
-  /* background-image:url('../images/5d.png'); */
-  background-size:cover;
-  z-index: 500;
-}
-
-.carousel, .carousel-item{
   background-size:contain;
-  
+  z-index: 500;
+ } */
+/* .d-block.w-100 */
+.active  {
+  /* transition: transform  !important; */
+  z-index: 10;
 
 }
+
+#holdImg{
+position:fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 50 !important;
+/* padding-top:10%; */
+
+
+}
+#holdSlide{
+
+  padding-left: 19px;
+  padding-top: 11px;
+position:fixed;
+
+  opacity:0;
+
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+z-index: 150 !important;
+
+
+}
+.carousel-inner{
+  width:600px;
+  max-height: 400px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
