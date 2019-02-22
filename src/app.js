@@ -90,6 +90,7 @@ $(document).ready(function () {
   }
 
   aboutGo = () => {
+    $('#btn-menu').fadeOut();
     playa = true;
     $('.carousel').carousel(0);
     $("#holdSlide").fadeTo("slow", 1);
