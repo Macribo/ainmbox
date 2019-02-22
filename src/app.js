@@ -5,19 +5,27 @@ function goToSlide(number) {
 
 $(document).ready(function () {
 
-
-  $('.terminal').typewriting("Hello World!", {
-
-    // default: 150
-    "typing_interval": 200,
-
-    // default: 0.7s
-    "blink_interval": "1s",
-
-    // default: black
-    "cursor_color": "#00fd55"
-
+  var typeWriting = new TypeWriting({
+    targetElement: document.getElementsByClassName('terminal')[0],
+    inputString: 'Hello, world.',
+    typing_interval: 130, // Interval between each character
+    blink_interval: '1s', // Interval of the cursor blinks
+    cursor_color: '#00fd55', // Color of the cursor
+  }, function () {
+    console.log("END");
   });
+  // $('.terminal').typewriting("Hello World!", {
+
+  //   // default: 150
+  //   "typing_interval": 200,
+
+  //   // default: 0.7s
+  //   "blink_interval": "1s",
+
+  //   // default: black
+  //   "cursor_color": "#00fd55"
+
+  // });
 
   slideEvent = () => {
     switch (slideNumber) {
