@@ -9,7 +9,7 @@ $(document).ready(function () {
         break;
 
       case 1: console.log("sampla");
-        wait = 4000;
+        wait = 6000;
         $('.carousel').carousel(1);
 
         break;
@@ -22,13 +22,13 @@ $(document).ready(function () {
 
         break;
       case 4: console.log("and then...");
-        wait = 1000;
+        // wait = 1000;
         $('.carousel').carousel(4);
 
         break;
 
       case 5: console.log("and then...");
-        wait = 4000;
+        // wait = 4000;
         $('.carousel').carousel(5);
 
         break;
@@ -70,6 +70,17 @@ $(document).ready(function () {
 
   let playa = false;
 
+  var slideNumber = 0;
+  var wait = 4000;
+  changeSlide = () => {
+
+    setTimeout(changeSlide, wait);
+    slideEvent();
+    slideNumber++;
+    ;
+  }
+  changeSlide();
+
   if (playa) {
     $('.carousel').carousel('cycle');
 
@@ -90,15 +101,5 @@ $(document).ready(function () {
     aboutGo();
 
   });
-
-  var slideNumber = 0;
-  var wait = 4000;
-  changeSlide = () => {
-
-    setTimeout(changeSlide, wait);
-    slideEvent();
-    slideNumber++;
-    ;
-  }
-  changeSlide();
 });
+

@@ -7,6 +7,14 @@ background-size:cover;
   color:green;
  
 }
+
+#bg-img1{
+
+
+  width:100%;
+  border:2px red solid;
+  /* background-size: */
+}
 .col{
 
   display: flex;
@@ -84,6 +92,10 @@ padding-top:10%;
 }
 
 #holdImg{
+
+  width:100%;
+  border:2px purple solid;
+  /* background-size: */
 position:fixed;
 display: flex;
 justify-content: center;
