@@ -150,6 +150,22 @@ margin:5%;
 
   /* border: 2px solid blue; */
 }
+#demo{
+display:none;
+  position: fixed;
+  display: flex;
+justify-content: left;
+align-items: center;
+/* top:0%;
+left:0%; */
+padding-left:20%;
+
+padding-top:20%;
+width: 100%;
+  color:white;
+  font-size: 2em !important; 
+  z-index: 100;
+}
 
 .carousel-inner,  .d-block.w-100{
   position:fixed;

@@ -1,19 +1,79 @@
+// import TypeWriting from 'typewriting';
+
+let englishProse = [
+  `I am the wind which breaths upon the sea,`,
+  `I am the wave of the ocean,`,
+  `I am the murmur of the billows,`,
+  `I am Stag of Seven Tines,`,
+  `I am a Hawk on a Cliff,`,
+  `I am a beam of the sun,`,
+  `I am the fairist of plants,`,
+  `I am a wild boar in valor,`,
+  `I am a salmon in the water,`,
+  `I am a lake in the plain,`,
+  `I am a word of science,`,
+  `I am the point of the lance of battle`,
+  `(I am) a Song on a Spear,`,
+  `an Enchantments of Wind.`
+
+
+
+];
+
 function goToSlide(number) {
   $("#carousel").carousel(number);
+  // sl
+
+
 }
 
 
+
+let currentLine = 0;
 $(document).ready(function () {
 
-  var typeWriting = new TypeWriting({
-    targetElement: document.getElementsByClassName('terminal')[0],
-    inputString: 'Hello, world.',
-    typing_interval: 130, // Interval between each character
-    blink_interval: '1s', // Interval of the cursor blinks
-    cursor_color: '#00fd55', // Color of the cursor
-  }, function () {
-    console.log("END");
-  });
+  let verse;
+  nextEng = (verse) => {
+    $('#demo').fadeTo("slow", 1);
+
+    if (verse === 0) {
+
+      //show 3 lines of the poem together on one slide
+
+      setTimeout(function () {
+        $('#demo').text(englishProse[2]);
+        typeWriter("#demo", "true", 80);
+        console.log(currentLine);
+        // $('#demo2', fadeOut());
+
+      }, 8000);
+
+      setTimeout(function () {
+
+        $('#demo').text(englishProse[1]);
+        typeWriter("#demo", "true", 80);
+        console.log(currentLine);
+        // $('#demo', fadeOut());
+      }, 4000);
+
+
+      $('#demo').text(englishProse[0]);
+      // return msg;
+      typeWriter("#demo", "true", 80);
+      console.log(currentLine);
+
+    }
+
+    else {
+
+      $('#demo').text(englishProse[verse]);
+      // return msg;
+      typeWriter("#demo", "true", 80);
+      console.log(currentLine);
+      currentLine++;
+    }
+  };
+
   // $('.terminal').typewriting("Hello World!", {
 
   //   // default: 150
@@ -32,27 +92,32 @@ $(document).ready(function () {
 
       case 0: console.log("First poem is...");
         goToSlide(0);
-        wait = 7000;
+        wait = 16000;
         break;
 
-      case 1: console.log("sampla");
-        wait = 7500;
+      case 1: console.log("an dán");
         goToSlide(1);
+        nextEng(0);
+
 
         break;
       case 2: console.log("according to legends");
         wait = 6500;
         goToSlide(2);
+        nextEng(3);
 
         break;
 
       case 3: console.log("nexto");
         goToSlide(3);
+        nextEng(5);
 
         break;
       case 4: console.log("and then...");
         // wait = 1000;
         goToSlide(4);
+
+        nextEng(6);
 
         break;
 
@@ -71,12 +136,12 @@ $(document).ready(function () {
         break;
       case 8: console.log("and then...");
         goToSlide(8);
-        wait = 13000;
+        wait = 15000;
 
         break;
       case 9: console.log("and then...");
         goToSlide(9);
-        wait = 7000;
+        wait = 6000;
 
         break;
       case 10: console.log("and then...");
@@ -92,11 +157,12 @@ $(document).ready(function () {
         break;
       case 12: console.log("according to legends");
         goToSlide(12);
+
         break;
 
       case 13: console.log("nexto");
         goToSlide(13);
-        alert();
+
         break;
       case 14: console.log("and then...");
         // wait = 1000;
@@ -226,9 +292,10 @@ $(document).ready(function () {
   }
 
   $(".about").click(function () {
-
+    // goToSlide(0);
+    slideNumber = 0;
     aboutGo();
-
+    nextEng();
   });
 });
 
