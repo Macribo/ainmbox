@@ -151,7 +151,7 @@ margin:5%;
   /* border: 2px solid blue; */
 }
 #demo{
-display:none;
+opacity:0;
   position: fixed;
   display: flex;
 justify-content: left;
@@ -160,13 +160,16 @@ align-items: center;
 left:0%; */
 padding-left:20%;
 
-padding-top:20%;
+padding-top:35%;
 width: 100%;
-  color:white;
+  color:rgb(230, 227, 93);
   font-size: 2em !important; 
   z-index: 100;
 }
 
+#cursor{
+  display:none;
+}
 .carousel-inner,  .d-block.w-100{
   position:fixed;
   /* justify-content: center;

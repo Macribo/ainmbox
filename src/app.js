@@ -18,6 +18,7 @@ let englishProse = [
 
 
 
+
 ];
 
 function goToSlide(number) {
@@ -27,50 +28,129 @@ function goToSlide(number) {
 
 }
 
+clearLine = () => {
+  $('#demo').fadeTo('fast', 0.01);
+  $('#demo').text('');
+  setTimeout(
+    function () {
+      $('#demo').fadeTo('fast', 1), 500
+    }
 
 
-let currentLine = 0;
+
+  );
+
+}
+
+
 $(document).ready(function () {
 
-  let verse;
   nextEng = (verse) => {
-    $('#demo').fadeTo("slow", 1);
 
     if (verse === 0) {
+      console.log("verse " + verse);
 
       //show 3 lines of the poem together on one slide
 
       setTimeout(function () {
-        $('#demo').text(englishProse[2]);
-        typeWriter("#demo", "true", 80);
-        console.log(currentLine);
-        // $('#demo2', fadeOut());
+        clearLine();
 
-      }, 8000);
+        $('#demo').text(englishProse[2]);
+        typeWriter("#demo", "true", 30);
+
+      }, 14000);
+
 
       setTimeout(function () {
+        clearLine();
 
+        $('#demo').text(' ');
         $('#demo').text(englishProse[1]);
-        typeWriter("#demo", "true", 80);
-        console.log(currentLine);
-        // $('#demo', fadeOut());
-      }, 4000);
+        typeWriter("#demo", "true", 30);
+      }, 6000);
 
+      $('#demo').text('');
 
       $('#demo').text(englishProse[0]);
       // return msg;
-      typeWriter("#demo", "true", 80);
-      console.log(currentLine);
+      typeWriter("#demo", "true", 30);
 
     }
+    else if (verse === 11) {
+      //show 4 lines of the poem together on one slide
+      console.log("verse " + verse);
 
+      setTimeout(function () {
+        clearLine();
+        $('#demo').text('');
+        $('#demo').text(englishProse[6]);
+        typeWriter("#demo", "true", 30);
+
+      }, 16000);
+
+
+
+      setTimeout(function () {
+        clearLine();
+        $('#demo').text('');
+        $('#demo').text(englishProse[5]);
+        typeWriter("#demo", "true", 30);
+
+      }, 16000);
+
+
+      setTimeout(function () {
+        clearLine();
+        $('#demo').text(' ');
+        $('#demo').text(englishProse[4]);
+        typeWriter("#demo", "true", 30);
+      }, 8000);
+
+      $('#demo').text('');
+
+      $('#demo').text(englishProse[3]);
+      // return msg;
+      typeWriter("#demo", "true", 30);
+
+    }
+    else if
+      (verse === 13) {
+      console.log("verse " + verse);
+
+      //show 3 lines of the poem together on one slide
+
+      setTimeout(function () {
+        clearLine();
+
+        $('#demo').text(englishProse[9]);
+        typeWriter("#demo", "true", 30);
+
+      }, 14000);
+
+
+      setTimeout(function () {
+        clearLine();
+
+        $('#demo').text(' ');
+        $('#demo').text(englishProse[8]);
+        typeWriter("#demo", "true", 30);
+      }, 6000);
+
+      $('#demo').text('');
+
+      $('#demo').text(englishProse[7]);
+      // return msg;
+      typeWriter("#demo", "true", 30);
+
+
+    }
     else {
 
       $('#demo').text(englishProse[verse]);
       // return msg;
-      typeWriter("#demo", "true", 80);
-      console.log(currentLine);
-      currentLine++;
+      typeWriter("#demo", "true", 30);
+
+
     }
   };
 
@@ -90,105 +170,116 @@ $(document).ready(function () {
   slideEvent = () => {
     switch (slideNumber) {
 
-      case 0: console.log("First poem is...");
+      case 0: console.log("The oldest Gaelic poem");
         goToSlide(0);
-        wait = 16000;
         break;
 
       case 1: console.log("an dán");
         goToSlide(1);
-        nextEng(0);
+
 
 
         break;
-      case 2: console.log("according to legends");
+      case 2: console.log("Fadó Fadó in Éireann");
         wait = 6500;
         goToSlide(2);
-        nextEng(3);
 
         break;
 
-      case 3: console.log("nexto");
+      case 3: console.log("Mac Breogan mac Bile");
         goToSlide(3);
-        nextEng(5);
 
         break;
-      case 4: console.log("and then...");
+      case 4: console.log("Amergín");
         // wait = 1000;
         goToSlide(4);
 
-        nextEng(6);
 
         break;
 
-      case 5: console.log("and then...");
+      case 5: console.log("Tuatha Dé Dannan...");
         // wait = 4000;
         goToSlide(5);
 
         break;
-      case 6: console.log("and then...");
+      case 6: console.log("Na Formóraigh.");
         goToSlide(6);
 
         break;
-      case 7: console.log("and then...");
+      case 7: console.log("Fórsaí Tuaithe Dé Dannan");
         goToSlide(7);
 
         break;
-      case 8: console.log("and then...");
+      case 8: console.log("Stoirm");
         goToSlide(8);
-        wait = 15000;
+
 
         break;
-      case 9: console.log("and then...");
+      case 9: console.log("filíocht...");
         goToSlide(9);
-        wait = 6000;
+        setTimeout(function () {
+          wait = 24000;
+
+        }, 3000);
 
         break;
       case 10: console.log("and then...");
         goToSlide(10);
+        setTimeout(function () {
+          nextEng(0);
+          $("#demo").fadeTo("slow", 1);
 
+
+        }, 2000)
         break;
 
 
-      case 11: console.log("sampla");
-        wait = 6000;
+      case 11: console.log("versa II");
+        wait = 28000;
         goToSlide(11);
+        // alert("should be here");
+        nextEng(11);
 
         break;
       case 12: console.log("according to legends");
         goToSlide(12);
+        nextEng(13);
 
+        // wait = 16000;
         break;
 
-      case 13: console.log("nexto");
+      case 13: console.log("versa 1");
         goToSlide(13);
+        nextEng(13);
 
         break;
-      case 14: console.log("and then...");
-        // wait = 1000;
+      case 14: console.log("versa 2");
+
         goToSlide(14);
+        nextEng(6);
 
         break;
 
-      case 15: console.log("and then...");
-        // wait = 4000;
+      case 15: console.log("versa 3");
         goToSlide(15);
+        nextEng(3);
 
         break;
-      case 16: console.log("and then...");
+      case 16: console.log("versa 3");
         goToSlide(16);
 
         break;
-      case 17: console.log("and then...");
+      case 17: console.log("versa 4");
         goToSlide(17);
 
         break;
-      case 18: console.log("and then...");
+      case 18: console.log("versa 5");
         goToSlide(18);
 
         break;
-      case 19: console.log("and then...");
+      case 19: console.log("versa 6");
         goToSlide(19);
+
 
         break;
       case 20: console.log("and then...");
