@@ -1,5 +1,5 @@
 // import TypeWriting from 'typewriting';
-
+4
 let englishProse = [
   `I am the wind which breaths upon the sea,`,
   `I am the wave of the ocean,`,
@@ -14,8 +14,8 @@ let englishProse = [
   `I am a word of science,`,
   `I am the point of the lance of battle`,
   `(I am) a Song on a Spear,`,
-  `an Enchantments of Wind.`
-
+  `an Enchantments of Wind.`,
+  ``
 
 
 
@@ -29,16 +29,16 @@ function goToSlide(number) {
 }
 
 clearLine = () => {
-  $('#demo').fadeTo('fast', 0.01);
-  $('#demo').text('');
-  setTimeout(
-    function () {
-      $('#demo').fadeTo('fast', 1), 500
-    }
+  // $('#demo').text(englishProse[14]);
+  $('#demo').fadeOut();
+
+  setTimeout(function () {
+    $('#demo').fadeIn();
+  }, 1000);
 
 
 
-  );
+
 
 }
 
@@ -53,27 +53,27 @@ $(document).ready(function () {
       //show 3 lines of the poem together on one slide
 
       setTimeout(function () {
-        clearLine();
 
         $('#demo').text(englishProse[2]);
-        typeWriter("#demo", "true", 30);
+        typeWriter("#demo", "true", 40);
+        clearLine();
 
       }, 14000);
 
 
       setTimeout(function () {
-        clearLine();
 
         $('#demo').text(' ');
         $('#demo').text(englishProse[1]);
-        typeWriter("#demo", "true", 30);
+        typeWriter("#demo", "true", 40);
+        clearLine();
       }, 6000);
+      clearLine();
 
-      $('#demo').text('');
 
       $('#demo').text(englishProse[0]);
       // return msg;
-      typeWriter("#demo", "true", 30);
+      typeWriter("#demo", "true", 40);
 
     }
     else if (verse === 11) {
@@ -81,36 +81,35 @@ $(document).ready(function () {
       console.log("verse " + verse);
 
       setTimeout(function () {
-        clearLine();
         $('#demo').text('');
+        clearLine();
         $('#demo').text(englishProse[6]);
-        typeWriter("#demo", "true", 30);
+        typeWriter("#demo", "true", 40);
 
-      }, 16000);
+      }, 12000);
 
 
 
       setTimeout(function () {
-        clearLine();
         $('#demo').text('');
-        $('#demo').text(englishProse[5]);
-        typeWriter("#demo", "true", 30);
 
-      }, 16000);
-
-
-      setTimeout(function () {
         clearLine();
-        $('#demo').text(' ');
-        $('#demo').text(englishProse[4]);
-        typeWriter("#demo", "true", 30);
+        $('#demo').text(englishProse[5]);
+        typeWriter("#demo", "true", 40);
+
       }, 8000);
 
-      $('#demo').text('');
+
+      setTimeout(function () {
+        clearLine();
+        $('#demo').text(englishProse[4]);
+        typeWriter("#demo", "true", 40);
+      }, 4000);
+
 
       $('#demo').text(englishProse[3]);
       // return msg;
-      typeWriter("#demo", "true", 30);
+      typeWriter("#demo", "true", 40);
 
     }
     else if
@@ -120,10 +119,9 @@ $(document).ready(function () {
       //show 3 lines of the poem together on one slide
 
       setTimeout(function () {
-        clearLine();
 
         $('#demo').text(englishProse[9]);
-        typeWriter("#demo", "true", 30);
+        typeWriter("#demo", "true", 40);
 
       }, 14000);
 
@@ -131,16 +129,63 @@ $(document).ready(function () {
       setTimeout(function () {
         clearLine();
 
-        $('#demo').text(' ');
         $('#demo').text(englishProse[8]);
-        typeWriter("#demo", "true", 30);
+        typeWriter("#demo", "true", 40);
       }, 6000);
 
       $('#demo').text('');
 
       $('#demo').text(englishProse[7]);
       // return msg;
-      typeWriter("#demo", "true", 30);
+      typeWriter("#demo", "true", 40);
+
+
+    }
+
+    else if (verse === 14) {
+
+      console.log("verse " + verse);
+
+      //show 3 lines of the poem together on one slide
+
+
+      setTimeout(function () {
+
+
+        $('#demo').text(' ');
+        $('#demo').text(englishProse[11]);
+        typeWriter("#demo", "true", 40);
+      }, 6000);
+
+
+      $('#demo').text(englishProse[10]);
+      // return msg;
+      typeWriter("#demo", "true", 40);
+
+
+
+    }
+
+
+    else if (verse === 15) {
+
+      console.log("verse " + verse);
+
+      //show 3 lines of the poem together on one slide
+
+
+      setTimeout(function () {
+
+        $('#demo').text(' ');
+        $('#demo').text(englishProse[13]);
+        typeWriter("#demo", "true", 40);
+      }, 6000);
+
+
+      $('#demo').text(englishProse[12]);
+      // return msg;
+      typeWriter("#demo", "true", 40);
+
 
 
     }
@@ -148,7 +193,7 @@ $(document).ready(function () {
 
       $('#demo').text(englishProse[verse]);
       // return msg;
-      typeWriter("#demo", "true", 30);
+      typeWriter("#demo", "true", 40);
 
 
     }
@@ -218,7 +263,7 @@ $(document).ready(function () {
       case 9: console.log("filíocht...");
         goToSlide(9);
         setTimeout(function () {
-          wait = 24000;
+          wait = 20000;
 
         }, 3000);
 
@@ -235,7 +280,6 @@ $(document).ready(function () {
 
 
       case 11: console.log("versa II");
-        wait = 28000;
         goToSlide(11);
         // alert("should be here");
         nextEng(11);
@@ -250,23 +294,25 @@ $(document).ready(function () {
 
       case 13: console.log("versa 1");
         goToSlide(13);
-        nextEng(13);
+        nextEng(14);
 
         break;
       case 14: console.log("versa 2");
 
         goToSlide(14);
-        nextEng(6);
+        nextEng(15);
 
         break;
 
       case 15: console.log("versa 3");
+        wait = 5000;
         goToSlide(15);
-        nextEng(3);
+        $('#demo').fadeOut();
 
         break;
       case 16: console.log("versa 3");
         goToSlide(16);
+        wait = 10000;
 
         break;
       case 17: console.log("versa 4");
