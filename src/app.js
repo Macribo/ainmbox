@@ -1,5 +1,5 @@
 // import TypeWriting from 'typewriting';
-4
+
 let englishProse = [
   `I am the wind which breaths upon the sea,`,
   `I am the wave of the ocean,`,
@@ -7,14 +7,14 @@ let englishProse = [
   `I am Stag of Seven Tines,`,
   `I am a Hawk on a Cliff,`,
   `I am a beam of the sun,`,
-  `I am the fairist of plants,`,
+  `I am the fairest of plants,`,
   `I am a wild boar in valor,`,
   `I am a salmon in the water,`,
   `I am a lake in the plain,`,
   `I am a word of science,`,
   `I am the point of the lance of battle`,
-  `(I am) a Song on a Spear,`,
-  `an Enchantments of Wind.`,
+  `(I am) a Song on a Spear;`,
+  `an Enchantment of Winds.`,
   ``
 ];
 
@@ -84,7 +84,7 @@ $(document).ready(function () {
         $('#demo').text(englishProse[6]);
         // typeWriter("#demo", "true", 40);
 
-      }, 12000);
+      }, 8000);
 
 
 
@@ -97,7 +97,7 @@ $(document).ready(function () {
         $('#demo').text(englishProse[5]);
         // typeWriter("#demo", "true", 40);
 
-      }, 8000);
+      }, 6000);
 
 
       setTimeout(function () {
@@ -106,7 +106,7 @@ $(document).ready(function () {
 
         $('#demo').text(englishProse[4]);
         // typeWriter("#demo", "true", 40);
-      }, 4000);
+      }, 3000);
 
       $('#demo').text(' ');
 
@@ -127,7 +127,7 @@ $(document).ready(function () {
         $('#demo').text(englishProse[9]);
         // typeWriter("#demo", "true", 40);
 
-      }, 14000);
+      }, 6000);
 
 
       setTimeout(function () {
@@ -136,7 +136,7 @@ $(document).ready(function () {
 
         $('#demo').text(englishProse[8]);
         // typeWriter("#demo", "true", 40);
-      }, 6000);
+      }, 3000);
 
       $('#demo').text('');
 
@@ -160,7 +160,7 @@ $(document).ready(function () {
         $('#demo').text(' ');
         $('#demo').text(englishProse[11]);
         // typeWriter("#demo", "true", 40);
-      }, 6000);
+      }, 4000);
 
       $('#demo').text(' ');
 
@@ -185,7 +185,7 @@ $(document).ready(function () {
         $('#demo').text(' ');
         $('#demo').text(englishProse[13]);
         // typeWriter("#demo", "true", 40);
-      }, 6000);
+      }, 3000);
 
 
       $('#demo').text(englishProse[12]);
@@ -203,14 +203,14 @@ $(document).ready(function () {
       $('#demo').text('');
 
       setTimeout(function () {
+        $('#demo').css('font-family', 'aonchlo');
 
         console.log("verse " + verse);
         $('#demo').text('');
 
         $("#demo").fadeTo("slow", 1);
 
-        $('#demo').css('font-family', '../fonts/aonchlo.ttf');
-        $('#demo').text('Acht smaoineamh, gníomh teangach.');
+        $('#demo').text('Uaireanta, is gníomh teangach é;  machnamh.');
         // return msg;
         $('#anseo').fadeTo("slow", 1);
 
@@ -294,7 +294,7 @@ $(document).ready(function () {
         goToSlide(9);
         console.log('music playing');
         setTimeout(function () {
-          wait = 14000;
+          wait = 11000;
 
         }, 3000);
 
@@ -314,14 +314,14 @@ $(document).ready(function () {
       case 11: console.log("versa II");
         goToSlide(11);
         // alert("should be here");
-        nextEng(11);
+        nextEng(11);//should be 11
 
         break;
       case 12: console.log("according to legends");
         goToSlide(12);
         nextEng(13);
 
-        wait = 12000;
+        wait = 8000;
         break;
 
       case 13: console.log("versa 1");
@@ -425,7 +425,7 @@ $(document).ready(function () {
 
   }
 
-  var darkpic = './images/backgrounds/bg_Dark.png';
+  var darkpic = './assets/images/backgrounds/bg_Dark.png';
 
 
   goToSlide({
