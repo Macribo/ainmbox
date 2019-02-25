@@ -9,6 +9,11 @@ body{
   
 }
 
+@font-face {
+  font-family: aonchlo;
+  src: url('../fonts/aonchlo.ttf');
+}
+
 #bg-img1{
   
   

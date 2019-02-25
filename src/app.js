@@ -210,7 +210,7 @@ $(document).ready(function () {
         $("#demo").fadeTo("slow", 1);
 
         $('#demo').css('font-family', '../fonts/aonchlo.ttf');
-        $('#demo').text('Acht Smaoineamh, gníomh an teanga');
+        $('#demo').text('Acht smaoineamh, gníomh teangach.');
         // return msg;
         $('#anseo').fadeTo("slow", 1);
 
