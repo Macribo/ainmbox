@@ -67,7 +67,7 @@ $(document).ready(function () {
           $('#demo').text(englishProse[2]);
           // typeWriter("#demo", "true", 40);
 
-        }, 8000);
+        }, 7000);
       }
 
       setTimeout(function () {
@@ -224,9 +224,16 @@ $(document).ready(function () {
 
         $('#demo').text('Uaireanta, is gníomh teangach  machnamh.');
         // return msg;
-        $('#anseo').fadeTo("slow", 1);
 
         // typeWriter("#demo", "true", 40);
+      }, 1000);
+      setTimeout(function () {
+
+        $('#anseo').fadeTo("slow", 1);
+        $('#btn-menu').fadeTo("slow", 1);
+        $('#start').fadeOut();
+        $('#about').fadeOut();
+
       }, 3000);
 
 
@@ -405,14 +412,18 @@ $(document).ready(function () {
         break;
       case 17: console.log("versa 4");
         goToSlide(17);
-        wait = 6000;
+        wait = 7000;
 
         break;
       case 18: console.log("versa 5");
+
         goToSlide(18);
+        wait = 8000;
 
         break;
       case 19: console.log("versa 6");
+        wait = 7000;
+
         goToSlide(19);
 
 
