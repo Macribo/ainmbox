@@ -1,5 +1,4 @@
 // import TypeWriting from 'typewriting';
-
 let englishProse = [
   `I am the wind which breaths upon the sea,`,
   `I am the wave of the ocean,`,
@@ -20,14 +19,22 @@ let englishProse = [
 
 //go fullscrean on about click
 
-var elem = document.getElementById("about");
+var about = document.getElementById("about");
+var start = document.getElementById("start");
 
-elem.onclick = function () {
-  req = elem.requestFullScreen || elem.webkitRequestFullScreen || elem.mozRequestFullScreen;
-  req.call(elem);
+about.onclick = function () {
+  req = about.requestFullScreen || about.webkitRequestFullScreen || about.mozRequestFullScreen;
+  req.call(about);
+
 }
 
 
+start.onclick = function () {
+
+
+  window.location.replace("file:///home/devugees/Desktop/RiboDev/ainmCleite/start.html");
+
+}
 function goToSlide(number) {
   $("#carousel").carousel(number);
   // sl
@@ -40,23 +47,28 @@ function goToSlide(number) {
 
 /*dammit it's better without animated text. to do remove.*/
 $(document).ready(function () {
+  // var aboutClicked = false;
+
 
   nextEng = (verse) => {
 
     if (verse === 0) {
-      console.log("verse " + verse);
-      $('#demo').text(' ');
-
-      //show 3 lines of the poem together on one slide
-
-      setTimeout(function () {
+      if (!aboutClicked) { verse = 0; }
+      else {
+        // $("#carousel").carousel('pause');
+        console.log("verse " + verse);
         $('#demo').text(' ');
 
-        $('#demo').text(englishProse[2]);
-        // typeWriter("#demo", "true", 40);
+        //show 3 lines of the poem together on one slide
 
-      }, 8000);
+        setTimeout(function () {
+          $('#demo').text(' ');
 
+          $('#demo').text(englishProse[2]);
+          // typeWriter("#demo", "true", 40);
+
+        }, 8000);
+      }
 
       setTimeout(function () {
 
@@ -143,7 +155,7 @@ $(document).ready(function () {
       $('#demo').text(englishProse[7]);
       // return msg;
       // typeWriter("#demo", "true", 40);
-
+      $('#skip').fadeTo('slow', 1);
 
     }
 
@@ -210,7 +222,7 @@ $(document).ready(function () {
 
         $("#demo").fadeTo("slow", 1);
 
-        $('#demo').text('Uaireanta, is gníomh teangach é;  machnamh.');
+        $('#demo').text('Uaireanta, is gníomh teangach  machnamh.');
         // return msg;
         $('#anseo').fadeTo("slow", 1);
 
@@ -242,6 +254,50 @@ $(document).ready(function () {
   //   "cursor_color": "#00fd55"
 
   // });
+
+
+
+  //amergin animations ///
+
+  animateAmergin1 = () => {
+
+
+
+
+    setTimeout(function () {
+      $("#blue-cape").animate({
+        left: '250px',
+        height: '10%',
+        width: '10%',
+        opacity: 0
+      }, "slow");
+
+    }, 6000);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ////////////////////////
   var amergin = document.getElementById("amergin");
   slideEvent = () => {
     switch (slideNumber) {
@@ -269,7 +325,7 @@ $(document).ready(function () {
         // wait = 1000;
         goToSlide(4);
 
-
+        animateAmergin1();
         break;
 
       case 5: console.log("Tuatha Dé Dannan...");
@@ -465,9 +521,13 @@ $(document).ready(function () {
 
   $(".about").click(function () {
     // goToSlide(0);
+    aboutClicked = true;
     slideNumber = 0;
     aboutGo();
     nextEng();
   });
+
+
+
 });
 

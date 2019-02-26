@@ -1,10 +1,18 @@
 *{}
 html{}
 body{
+
+
+    padding:0;
+    margin:0;
+    background-size: 100% 100%;
+ 
+
+
   background-image:url("../images/backgrounds/bg_1.png");
-  background-size:cover;
+  /* background-size:cover; */
   overflow:hidden;
-  color:green;
+  /* color:green; */
   
   
 }
@@ -20,7 +28,7 @@ body{
   width:100%;
   /* background-size: */
 }
-#btn-menu {
+#btn-menu, #blue-cape-menu {
   /* border2px rgb(255, 255, 255) solid; */
   
   height: 100%;
@@ -86,6 +94,24 @@ display: flex;
   left:0;
   background-size:contain;
 } */
+#blue-cape-menu{
+
+}
+
+#blue-cape{
+   top:0; 
+   padding-right:0;
+   margin-right:0; 
+
+    
+  /* position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:0%;
+  margin-left:0%; */
+  z-index: 8000;
+}
 .road{
   background-image:url("../images/backgrounds/bg_0.png");
   /* z-index: 00; */
@@ -103,6 +129,18 @@ display: flex;
 #about{
   /* position:relative; */
   /* z-index:600; */
+}
+
+#skip{
+  opacity:0;
+  z-index: 8000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:10%;
+  
+
 }
 
 /* .amergin{
@@ -205,3 +243,4 @@ align-items: center; */
 
 
 } 
+
