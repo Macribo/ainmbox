@@ -22,11 +22,6 @@ let englishProse = [
 var about = document.getElementById("about");
 var start = document.getElementById("start");
 
-about.onclick = function () {
-  req = about.requestFullScreen || about.webkitRequestFullScreen || about.mozRequestFullScreen;
-  req.call(about);
-
-}
 skipVis = () => {
   alert();
 }
@@ -533,17 +528,33 @@ $(document).ready(function () {
   }
 
   $(".about").click(function () {
-    // goToSlide(0);
 
-    $('#dark-frame').animate({ opacity: 1 });
-    console.log("Where's the frame?");
-    $('#carousel').removeClass('hidden');
-    aboutClicked = true;
-    slideNumber = 0;
-    aboutGo();
-    nextEng();
+
+
+    $('#on-top').animate({
+      opacity: 1,
+      background: 'black'
+    })
+    setTimeout(function () {
+      req = about.requestFullScreen || about.webkitRequestFullScreen || about.mozRequestFullScreen;
+
+
+      $('#dark-frame').animate({ opacity: 1 });
+      $('#carousel').removeClass('hidden');
+      slideNumber = 0;
+      aboutGo();
+      nextEng();
+    }, 400)
+    setTimeout(function () {
+      req.call(about);
+
+      $('#on-top').animate({
+        opacity: 0,
+        background: 'black'
+      })
+    }, 800);
   });
-
+  // .preventDefault();
 
 
 });
