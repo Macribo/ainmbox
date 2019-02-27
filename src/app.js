@@ -77,12 +77,11 @@ $(document).ready(function () {
         // typeWriter("#demo", "true", 40);
         // clearLine();
       }, 4000);
-      // clearLine();
 
       $('#demo').text(' ');
 
-      $('#demo').text(englishProse[0]);
       $('#demo').fadeTo('slow', 1);
+      $('#demo').text(englishProse[0]);
       // return msg;
       // typeWriter("#demo", "true", 40);
 
@@ -274,13 +273,13 @@ $(document).ready(function () {
 
     setTimeout(function () {
       $("#blue-cape").animate({
-        left: '250px',
-        height: '10%',
-        width: '10%',
+        top: "-=20",
         opacity: 0
+
+
       }, "slow");
 
-    }, 6000);
+    }, 5000);
   }
 
 

@@ -52,7 +52,15 @@ body{
   
 }
 #blue-cape-menu{
-  background-color:black;
+  /* border:2px solid red; */
+max-height:30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin:10%;
+
+ max-width:80%;
+  background-color:black
 }
 .hidden{
   display:none;
@@ -113,19 +121,15 @@ bottom:0;
   
   size:cover; */
 }
-
-
-
-} */
 #blue-cape-menu{
 
 }
 
 #blue-cape{
-   top:0; 
-   padding-right:0;
-   margin-right:0; 
-
+  position:fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
     
   /* position: fixed;
   display: flex;
@@ -221,8 +225,8 @@ align-items: center;
 text-align:center;
 /* top:0%;
 left:0%; */
-margin-top:11%;
-margin-left:8%;
+margin-top:0%;
+margin-right:5%;
 padding:25%;
 
   color:rgb(230, 227, 93);
