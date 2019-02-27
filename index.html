@@ -1,6 +1,9 @@
 <!doctype html>
 
 <head>
+
+
+
   <html lang="ga" xmlns="http://www.w3.org/1999/xhtml">
   <meta charset="UTF-8">
   <!-- <script src="./scripts/typeWriter.js-master/typeWriter.js"></script> -->
@@ -15,9 +18,27 @@
   <script src="./assets/scripts/jquery.js"></script>
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Ainm Cleite</title>
-</head>
 
-<body>
+</head>
+<script>
+  function loadIt() {
+    setTimeout(function () {
+      var body = document.getElementById('toLoad');
+      body.className += 'loaded';
+      console.log("load spinner visible?")
+    }, 000); //add for curtains intro
+  }
+
+</script>
+
+<body onload="loadIt()" id="toLoad">
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left">
+    </div>
+    <div class="loader-section section-right"></div>
+
+  </div>
   <audio id="amergin">
     <source src="./assets/audio/Herre_Jorna_-_02_-_Oops_A_Glitch.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -201,6 +222,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+
+
+
+
+
 
 </body>
 <script src="./src/app.js"></script>
