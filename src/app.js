@@ -27,7 +27,9 @@ about.onclick = function () {
   req.call(about);
 
 }
-
+skipVis = () => {
+  alert();
+}
 
 start.onclick = function () {
 
@@ -50,25 +52,23 @@ $(document).ready(function () {
   // var aboutClicked = false;
 
 
+
   nextEng = (verse) => {
 
     if (verse === 0) {
-      if (!aboutClicked) { verse = 0; }
-      else {
-        // $("#carousel").carousel('pause');
-        console.log("verse " + verse);
+      // $("#carousel").carousel('pause');
+      console.log("verse " + verse);
+      $('#demo').text(' ');
+
+      //show 3 lines of the poem together on one slide
+
+      setTimeout(function () {
         $('#demo').text(' ');
 
-        //show 3 lines of the poem together on one slide
+        $('#demo').text(englishProse[2]);
+        // typeWriter("#demo", "true", 40);
 
-        setTimeout(function () {
-          $('#demo').text(' ');
-
-          $('#demo').text(englishProse[2]);
-          // typeWriter("#demo", "true", 40);
-
-        }, 7000);
-      }
+      }, 7000);
 
       setTimeout(function () {
 
@@ -82,6 +82,7 @@ $(document).ready(function () {
       $('#demo').text(' ');
 
       $('#demo').text(englishProse[0]);
+      $('#demo').fadeTo('slow', 1);
       // return msg;
       // typeWriter("#demo", "true", 40);
 
@@ -311,6 +312,8 @@ $(document).ready(function () {
 
       case 0: console.log("The oldest Gaelic poem");
         goToSlide(0);
+        amergin.pause();
+        $('#demo').fadeOut();
         break;
 
       case 1: console.log("an dán");
@@ -492,7 +495,7 @@ $(document).ready(function () {
 
   }
 
-  var darkpic = './assets/images/backgrounds/bg_Dark.png';
+  // var darkpic = './assets/images/backgrounds/bg_Dark.png';
 
 
   goToSlide({
@@ -527,11 +530,15 @@ $(document).ready(function () {
     playa = true;
     goToSlide(0);
     $("#holdSlide").fadeTo("slow", 1);
-    document.getElementById('bg-img1').src = darkpic;
+    // $('#hold-frame').css('background-image', darkpic)
   }
 
   $(".about").click(function () {
     // goToSlide(0);
+
+    $('#dark-frame').animate({ opacity: 1 });
+    console.log("Where's the frame?");
+    $('#carousel').removeClass('hidden');
     aboutClicked = true;
     slideNumber = 0;
     aboutGo();
