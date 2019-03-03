@@ -3,6 +3,42 @@
   <meta charset="utf-8" />
 
   <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+      integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+      integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+      integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
     <title>Irish</title>
     <link rel="stylesheet" href="../assets/css/irish.css" />
     <link
@@ -17,26 +53,31 @@
     <audio id="hum1" loop>
       <source src="../assets/audio/hum1.mp3" />
     </audio>
-    <div class="content">
-      <div class="container">
-        <button id="fwdBtn">
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </button>
-        <button id="bckBtn">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </button>
-        <button id="play">
-          <i class="fa fa-check" aria-hidden="true"></i>
-        </button>
-
-        <p id="output2"></p>
-
-        <div id="dealbhMask"></div>
-        <div id="scribble"></div>
-        <div id="badge"></div>
-
-        <p id="bearla">Hover on Irish text for English Translation</p>
+    <div class="col-12" id="main-bg">
+      <div class="row">
+        <div class="col-4" id="smaller">col-4</div>
+        <div class="col-8" id="larger">col-8</div>
       </div>
+      <div class="row">
+        <div class="col-12" id="ctrls"></div>
+      </div>
+      <button id="fwdBtn">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button>
+      <button id="bckBtn">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </button>
+      <button id="play">
+        <i class="fa fa-check" aria-hidden="true"></i>
+      </button>
+
+      <p id="output2"></p>
+
+      <div id="dealbhMask"></div>
+      <div id="scribble"></div>
+      <div id="badge"></div>
+
+      <p id="bearla">Hover on Irish text for English Translation</p>
     </div>
   </body>
   <script src="../assets/scripts/jqueries.js"></script>
