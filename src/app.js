@@ -165,7 +165,7 @@ var start = document.getElementById('start');
 
 start.onclick = function() {
   window.location.replace(
-    './irish.html'
+    './Untitled/index.html'
   );
 };
 

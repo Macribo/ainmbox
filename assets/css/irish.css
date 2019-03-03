@@ -99,12 +99,6 @@
   #alt-title {
     opacity: 0;
   }
-  #title:hover {
-  }
-
-   {
-    font-size: 14px;
-  }
 
   img {
     max-width: 100%;
@@ -171,6 +165,16 @@
     background-repeat: horizontal;
     background-image: url('../images/dealbhMask.png');
     z-index: 10;
+  }
+
+  #irish {
+    /* display:none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8000;
   }
 
   #scribble {
@@ -410,12 +414,6 @@
 
   #alt-title {
     opacity: 0;
-  }
-  #title:hover {
-  }
-
-   {
-    font-size: 14px;
   }
 
   img {
