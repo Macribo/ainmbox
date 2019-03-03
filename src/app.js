@@ -1,3 +1,4 @@
+var slideNumber = 0;
 // import TypeWriting from 'typewriting';
 let englishProse = [
   `I am the wind which breaths upon the sea,`,
@@ -17,545 +18,464 @@ let englishProse = [
   ``
 ];
 
-//go fullscrean on about click
-
-var about = document.getElementById("about");
-var start = document.getElementById("start");
-
-skipVis = () => {
-  alert();
-}
-
-start.onclick = function () {
 
 
-  window.location.replace("file:///home/devugees/Desktop/RiboDev/ainmCleite/start.html");
-
-}
-function goToSlide(number) {
-  $("#carousel").carousel(number);
-  // sl
-
-
-}
-
-
-
-
-/*dammit it's better without animated text. to do remove.*/
-$(document).ready(function () {
-  // var aboutClicked = false;
-
-
-
-  nextEng = (verse) => {
-
-    if (verse === 0) {
-      // $("#carousel").carousel('pause');
-      console.log("verse " + verse);
-      $('#demo').text(' ');
-
-      //show 3 lines of the poem together on one slide
-
-      setTimeout(function () {
-        $('#demo').text(' ');
-
-        $('#demo').text(englishProse[2]);
-        // typeWriter("#demo", "true", 40);
-
-      }, 7000);
-
-      setTimeout(function () {
-
-        $('#demo').text(' ');
-        $('#demo').text(englishProse[1]);
-        // typeWriter("#demo", "true", 40);
-        // clearLine();
-      }, 4000);
-
-      $('#demo').text(' ');
-
-      $('#demo').fadeTo('slow', 1);
-      $('#demo').text(englishProse[0]);
-      // return msg;
+verse2 = () => {
+    setTimeout(function() {
+      $('#demo').text('');
+      // clearLine();
+      $('#demo').text(englishProse[6]);
       // typeWriter("#demo", "true", 40);
+    }, 8000);
 
-    }
-    else if (verse === 11) {
-      //show 4 lines of the poem together on one slide
-      console.log("verse " + verse);
-
-      setTimeout(function () {
-        $('#demo').text('');
-        // clearLine();
-        $('#demo').text(englishProse[6]);
-        // typeWriter("#demo", "true", 40);
-
-      }, 8000);
-
-
-
-      setTimeout(function () {
-        $('#demo').text('');
-
-        // clearLine();
-        $('#demo').text(' ');
-
-        $('#demo').text(englishProse[5]);
-        // typeWriter("#demo", "true", 40);
-
-      }, 6000);
-
-
-      setTimeout(function () {
-        // clearLine();
-        $('#demo').text(' ');
-
-        $('#demo').text(englishProse[4]);
-        // typeWriter("#demo", "true", 40);
-      }, 3000);
-
-      $('#demo').text(' ');
-
-      $('#demo').text(englishProse[3]);
-      // return msg;
-      // typeWriter("#demo", "true", 40);
-
-    }
-    else if
-      (verse === 13) {
-      console.log("verse " + verse);
-
-      //show 3 lines of the poem together on one slide
-
-      setTimeout(function () {
-        $('#demo').text(' ');
-
-        $('#demo').text(englishProse[9]);
-        // typeWriter("#demo", "true", 40);
-
-      }, 6000);
-
-
-      setTimeout(function () {
-        // clearLine();
-        $('#demo').text(' ');
-
-        $('#demo').text(englishProse[8]);
-        // typeWriter("#demo", "true", 40);
-      }, 3000);
-
+    setTimeout(function() {
       $('#demo').text('');
 
-      $('#demo').text(englishProse[7]);
-      // return msg;
-      // typeWriter("#demo", "true", 40);
-      $('#skip').fadeTo('slow', 1);
-
-    }
-
-    else if (verse === 14) {
-
-      console.log("verse " + verse);
-
-      //show 3 lines of the poem together on one slide
-
-
-      setTimeout(function () {
-
-
-        $('#demo').text(' ');
-        $('#demo').text(englishProse[11]);
-        // typeWriter("#demo", "true", 40);
-      }, 4000);
-
+      // clearLine();
       $('#demo').text(' ');
 
-      $('#demo').text(englishProse[10]);
-      // return msg;
+      $('#demo').text(englishProse[5]);
       // typeWriter("#demo", "true", 40);
-
-
-
-    }
-
-
-    else if (verse === 15) {
-
-      console.log("verse " + verse);
-
-      //show 3 lines of the poem together on one slide
-
-
-      setTimeout(function () {
-
-        $('#demo').text(' ');
-        $('#demo').text(englishProse[13]);
-        // typeWriter("#demo", "true", 40);
-      }, 3000);
-
-
-      $('#demo').text(englishProse[12]);
-      // return msg;
-      // typeWriter("#demo", "true", 40);
-
-
-
-    }
-
-
-
-
-    else if (verse === 31) {
-      $('#demo').text('');
-
-      setTimeout(function () {
-        $('#demo').css('font-family', 'aonchlo');
-
-        console.log("verse " + verse);
-        $('#demo').text('');
-
-        $("#demo").fadeTo("slow", 1);
-
-        $('#demo').text('Uaireanta, is gníomh teangach  machnamh.');
-        // return msg;
-
-        // typeWriter("#demo", "true", 40);
-      }, 1000);
-      setTimeout(function () {
-
-        $('#anseo').fadeTo("slow", 1);
-        $('#btn-menu').fadeTo("slow", 1);
-        $('#start').fadeOut();
-        $('#about').fadeOut();
-
-      }, 3000);
-
-
-    }
-
-    else {
-
-      $('#demo').text(englishProse[verse]);
-      // return msg;
-      // typeWriter("#demo", "true", 40);
-
-
-    }
-  };
-
-  // $('.terminal').typewriting("Hello World!", {
-
-  //   // default: 150
-  //   "typing_interval": 200,
-
-  //   // default: 0.7s
-  //   "blink_interval": "1s",
-
-  //   // default: black
-  //   "cursor_color": "#00fd55"
-
-  // });
-
-
-
-  //amergin animations ///
-
-  animateAmergin1 = () => {
-
-
-
-
-    setTimeout(function () {
-      $("#blue-cape").animate({
-        top: "-=20",
-        opacity: 0
-
-
-      }, "slow");
-
     }, 5000);
+
+    setTimeout(function() {
+      // clearLine();
+      $('#demo').text(' ');
+
+      $('#demo').text(englishProse[4]);
+      // typeWriter("#demo", "true", 40);
+    }, 2000);
+
+    $('#demo').text(' ');
+
+    $('#demo').text(englishProse[3]);
+    // return msg;
+    // typeWriter("#demo", "true", 40);
+    break;
+
+};
+
+verse3 = () => {
+
+ //show 3 lines of the poem sequentially on one slide
+
+ setTimeout(function() {
+  $('#demo').text(' ');
+
+  $('#demo').text(englishProse[9]);
+  // typeWriter("#demo", "true", 40);
+}, 6000);
+
+setTimeout(function() {
+  // clearLine();
+  $('#demo').text(' ');
+
+  $('#demo').text(englishProse[8]);
+  // typeWriter("#demo", "true", 40);
+}, 3000);
+
+$('#demo').text('');
+
+$('#demo').text(englishProse[7]);
+// return msg;
+// typeWriter("#demo", "true", 40);
+$('#skip').fadeTo('slow', 1);
+
+break;
+};
+verse4 = () => {
+  setTimeout(function() {
+    $('#demo').text(' ');
+    $('#demo').text(englishProse[11]);
+    // typeWriter("#demo", "true", 40);
+  }, 4000);
+
+  $('#demo').text(' ');
+
+  $('#demo').text(englishProse[10]);
+  // return msg;
+  // typeWriter("#demo", "true", 40);
+  break;
+
+};
+verse5 = () => {
+ //show 3 lines of the poem together on one slide
+
+ setTimeout(function() {
+  $('#demo').text(' ');
+  $('#demo').text(englishProse[13]);
+  // typeWriter("#demo", "true", 40);
+}, 3000);
+
+$('#demo').text(englishProse[12]);
+// return msg;
+// typeWriter("#demo", "true", 40);
+break;
+
+};
+verse6 = () => {
+  $('#demo').text('');
+
+  setTimeout(function() {
+    $('#demo').css('font-family', 'aonchlo');
+
+    $('#demo').text('');
+
+    $('#demo').fadeTo('slow', 1);
+
+    $('#demo').text('Uaireanta, is gníomh teangach  machnamh.');
+    // return msg;
+
+    // typeWriter("#demo", "true", 40);
+  }, 1000);
+  // setTimeout(function() {
+  // $('#anseo').fadeTo('slow', 1);
+  // $('#btn-menu').fadeTo('slow', 1);
+  //   $('#start').fadeOut();
+  //   $('#about').fadeOut();
+  // }, 3000);
+
+  break;
+
+};
+
+test = ()=>{
+  console.log(
+
+    "TEST"
+   );
+}
+// animateAmergin1 = () => {
+//   setTimeout(function() {
+//     $('#blue-cape').animate(
+//       {
+//         top: '-=20',
+//         opacity: 0
+//       },
+//       'slow'
+//     );
+//   }, 5000);
+// };
+
+//go fullscreen on about click TODO: Press esc to exit fullscreen and add skip btn
+var about = document.getElementById('about');
+var start = document.getElementById('start');
+
+
+
+start.onclick = function() {
+  window.location.replace(
+    './Irish/src/Irish.html'
+  );
+};
+
+
+
+//load images into slides.
+//Include 'special effects' with slideAction 
+for (let i = 1; i < 33; i++) {
+  let picName = '';
+  i < 10 ? (picName = '0' + i) : (picName = i);
+  let slideAction = '';
+  switch (i) {
+    
+    case 4:
+      //amergin animations ///
+    
+    slideAction = `
+        <div id="blue-cape-menu" onload="test()">
+        
+       <img id="blue-cape" src="assets/images/blue-cape.gif" >
+    </div>`;
+
+      break;
+
+    case 10:
+      $('#demo').text(' ');
+
+      //show 3 lines of the poem together on one slide
+
+      break;
+
+    case 11:
+      break;
+    case 12:
+      break;
+    case 13:
+      break;
+
+    case 14:
+      break;
+    case 15:
+   
+    default:
+      // alert('default');
+      slideAction = '';
   }
+  let carouselBodyString = `<div class="carousel-item">
+                              <img class="d-block w-100" src="./assets/images/About1/${picName}.png" alt="Second slide">
+                              ${slideAction}
+                            </div>`; //creatae dom elements
+  console.log(i + 'slideAction:' + slideAction);
 
+  $('#carousel-inner-id').append(carouselBodyString); //append
+}
 
+function goToSlide(number) {
+  $('#carousel').carousel(number);
+  // sl
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  ////////////////////////
-  var amergin = document.getElementById("amergin");
+$(document).ready(function() {
+  var amergin = document.getElementById('amergin');
   slideEvent = () => {
     switch (slideNumber) {
-
-      case 0: console.log("The oldest Gaelic poem");
+      case 0:
+        console.log('The oldest Gaelic poem');
         goToSlide(0);
         amergin.pause();
         $('#demo').fadeOut();
         break;
 
-      case 1: console.log("an dán");
+      case 1:
+        console.log('an dán');
         goToSlide(1);
 
-
-
         break;
-      case 2: console.log("Fadó Fadó in Éireann");
+      case 2:
+        console.log('Fadó Fadó in Éireann');
         wait = 6500;
         goToSlide(2);
         break;
 
-      case 3: console.log("Mac Breogan mac Bile");
+      case 3:
+        console.log('Mac Breogan mac Bile');
         goToSlide(3);
 
         break;
-      case 4: console.log("Amergín");
+      case 4:
+        console.log('Amergín');
         // wait = 1000;
         goToSlide(4);
 
-        animateAmergin1();
         break;
 
-      case 5: console.log("Tuatha Dé Dannan...");
+      case 5:
+        console.log('Tuatha Dé Dannan...');
         // wait = 4000;
         goToSlide(5);
 
         break;
-      case 6: console.log("Na Formóraigh.");
+      case 6:
+        console.log('Na Formóraigh.');
         goToSlide(6);
 
         break;
-      case 7: console.log("Fórsaí Tuaithe Dé Dannan");
+      case 7:
+        console.log('Fórsaí Tuaithe Dé Dannan');
         goToSlide(7);
 
         break;
-      case 8: console.log("Stoirm");
+      case 8:
+        console.log('Stoirm');
         goToSlide(8);
 
-
         break;
-      case 9: console.log("filíocht...");
+      case 9:
+        console.log('filíocht...');
         goToSlide(9);
         console.log('music playing');
-        setTimeout(function () {
-          wait = 11000;
-
+        setTimeout(function() {
+          wait = 3000;
         }, 3000);
 
         break;
-      case 10: console.log("and then...");
+      case 10:
+        console.log('and then...');
         amergin.play();
         goToSlide(10);
-        setTimeout(function () {
-          nextEng(0);
-          $("#demo").fadeTo("slow", 1);
-
-
-        }, 2000)
+        setTimeout(function() {
+          $('#demo').fadeTo('slow', 1);
+        }, 2000);
         break;
 
-
-      case 11: console.log("versa II");
+      case 11:
         goToSlide(11);
         // alert("should be here");
-        nextEng(11);//should be 11
 
         break;
-      case 12: console.log("according to legends");
+      case 12:
+        console.log('according to legends');
         goToSlide(12);
-        nextEng(13);
 
-        wait = 8000;
+        wait = 3000;
         break;
 
-      case 13: console.log("versa 1");
+      case 13:
         goToSlide(13);
-        nextEng(14);
 
         break;
-      case 14: console.log("versa 2");
-
+      case 14:
         goToSlide(14);
-        nextEng(15);
 
         break;
 
-      case 15: console.log("versa 3");
-        wait = 5000;
+      case 15:
         goToSlide(15);
         $('#demo').fadeOut();
 
         break;
-      case 16: console.log("versa 3");
+      case 16:
         goToSlide(16);
-        wait = 4000;
 
         break;
-      case 17: console.log("versa 4");
+      case 17:
         goToSlide(17);
-        wait = 7000;
 
         break;
-      case 18: console.log("versa 5");
-
+      case 18:
         goToSlide(18);
-        wait = 8000;
 
         break;
-      case 19: console.log("versa 6");
+      case 19:
         wait = 7000;
 
         goToSlide(19);
 
-
         break;
-      case 20: console.log("and then...");
+      case 20:
+        console.log('and then...');
         goToSlide(20);
 
         break;
 
-      case 21: console.log("sampla");
+      case 21:
+        console.log('sampla');
         // wait = 6000;
         goToSlide(21);
 
         break;
-      case 22: console.log("according to legends");
+      case 22:
+        console.log('according to legends');
         goToSlide(22);
         break;
 
-      case 23: console.log("nexto");
+      case 23:
+        console.log('nexto');
         goToSlide(23);
 
         break;
-      case 24: console.log("and then...");
+      case 24:
+        console.log('and then...');
         // wait = 1000;
         goToSlide(24);
 
         break;
 
-      case 25: console.log("and then...");
+      case 25:
+        console.log('and then...');
         // wait = 4000;
         goToSlide(25);
 
         break;
-      case 26: console.log("and then...");
+      case 26:
+        console.log('and then...');
         goToSlide(26);
 
         break;
-      case 27: console.log("and then...");
+      case 27:
+        console.log('and then...');
         goToSlide(27);
 
         break;
-      case 28: console.log("and then...");
+      case 28:
+        console.log('and then...');
         goToSlide(28);
 
         break;
-      case 29: console.log("and then...");
+      case 29:
+        console.log('and then...');
         goToSlide(29);
-        $("#demo").fadeTo("slow", 1);
-        nextEng(31);
+        $('#demo').fadeTo('slow', 1);
 
         break;
-      case 30: console.log("and then...");
+      case 30:
+        console.log('and then...');
         goToSlide(30);
 
-        break;
 
         break;
-      case 31: console.log("and then...");
+      case 31:
+        console.log('and then...');
         goToSlide(31);
 
         break;
+        case 32:
+        console.log('and then...');
+        goToSlide(32);
 
-      default: break;
+        break;
 
+      default:
+        break;
     }
-
-  }
+  };
 
   // var darkpic = './assets/images/backgrounds/bg_Dark.png';
 
-
   goToSlide({
     pause: false,
-    interval: 0,
-
-  })
+    interval: 0
+  });
 
   let playa = false;
 
-  var slideNumber = 0;
   var wait = 4000;
   changeSlide = () => {
-
     setTimeout(changeSlide, wait);
     slideEvent();
     slideNumber++;
-    ;
-  }
+  };
   changeSlide();
 
   if (playa) {
     goToSlide('cycle');
-
   } else {
     goToSlide('pause');
-
   }
 
   aboutGo = () => {
     $('#btn-menu').fadeOut();
-    playa = true;
+    aboutIsRunning = true;
     goToSlide(0);
-    $("#holdSlide").fadeTo("slow", 1);
+    $('#holdSlide').fadeTo('slow', 1);
     // $('#hold-frame').css('background-image', darkpic)
-  }
+  };
 
-  $(".about").click(function () {
-
-
-
+  $('.about').click(function() {
     $('#on-top').animate({
       opacity: 1,
       background: 'black'
-    })
-    setTimeout(function () {
-      req = about.requestFullScreen || about.webkitRequestFullScreen || about.mozRequestFullScreen;
-
+    });
+    setTimeout(function() {
+      req =
+        about.requestFullScreen ||
+        about.webkitRequestFullScreen ||
+        about.mozRequestFullScreen;
 
       $('#dark-frame').animate({ opacity: 1 });
       $('#carousel').removeClass('hidden');
       slideNumber = 0;
       aboutGo();
-      nextEng();
-    }, 400)
-    setTimeout(function () {
+    }, 400);
+    setTimeout(function() {
       req.call(about);
 
       $('#on-top').animate({
         opacity: 0,
         background: 'black'
-      })
+      });
     }, 800);
   });
-  // .preventDefault();
-
-
+  
 });
-

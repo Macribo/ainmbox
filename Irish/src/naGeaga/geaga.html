@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+    <meta charset="utf-8">
+
+    <head>
+        
+            <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+            <script>
+  // Initialize Firebase
+  var config = {
+              apiKey: "AIzaSyCfT6Q3UsjiwexI74UfwLUCT4Q-7-dkGLI",
+                  authDomain: "irl3ile.firebaseapp.com",
+                      databaseURL: "https://irl3ile.firebaseio.com",
+                          projectId: "irl3ile",
+                              storageBucket: "",
+                                  messagingSenderId: "53478520975"
+                                            };
+  firebase.initializeApp(config);
+            </script>
+            <title>Imreoir a hAon</title>
+        <link rel="stylesheet" href="geaga.css">
+        <link rel="stylesheet" href="../../font-awesome-4.7.0/css/font-awesome.min.css">
+        <script src="../jquery-1.4.js"></script>
+        <!--For Firefox  
+            <link rel="stylesheet" href="http://www.upsingh.in/css/font-awesome.min.css">
+
+            <script src="requestAnimationFramePolyfill.js"></script>
+            -->
+
+            <meta name="viewport" content = "width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+
+        <audio id='seanDown' loop>
+            <source src="../../audio/abattoir.mp3">
+        </audio>
+        <div id="left-panel">
+            <div id="shield-holder">
+                <div id="badge"></div>
+                <p id="bearla"></p>
+
+
+
+            </div>
+
+        </div>
+        <div id="canvas-panel">
+            <p id="deirGeaga1"></p>
+            <p id="deirGeaga2"></p>
+            <div id="loading"></div>
+            <div id="mapFrame"></div>
+            <canvas width="776" height="468" id="geagaCanvas"></canvas>
+                        <div id="tidyBox1">
+                            <div id="imreoirWLv"></div>
+                            <div id="emblem">
+                            </div>
+                            <p id="output2">
+                            </p>
+                            <input id="inputName"  value='' type="text" placeholder="imreoir a h-aon" onfocus="this.placeholder = ''">
+                            <br/>
+                            <label id= "inputLabel" ><span id='is my name'>is ainm dom</span>
+                            </label> 
+                            <br/>
+                            </button>
+                    <div id="portrait"></div>
+                        </div>
+                        <div id="contae">
+                        </div>
+                        <div id="mainText">  
+                        </div>
+                        <div id="whichFoireann">
+
+                        </div>
+
+            <div id="allChat">
+                    
+                
+                <div id="chatPanel"></div>
+               
+                <div id="geaga">
+                    <div id="súile"> </div>
+                </div>
+
+
+            </div>
+            <div id="leavePanel">
+                <div id="leaveTxt"> Fág an áit seo?</div>
+                <button id="leave"><i class="fa fa-check"></i></button>
+                <button id="noLeave"><i class="fa fa-window-close-o"></i></button>
+
+
+            </div>
+
+            <div id="inputElements">
+            </div>
+
+
+
+        </div>
+
+        <div id="ctrlsFrame">
+            
+
+                            <button id="levelSelect"><i class= "fa fa-check" aria-hidden="true"></i></button>
+                            <button id="joinTeam"><i class= "fa fa-check" aria-hidden="true"></i></button>
+                            <button id="btnLvR"><i class= "fa fa-arrow-right" aria-hidden="true"></i></button>
+                            <button id="btnLvL"><i class= "fa fa-arrow-left" aria-hidden="true"></i></button>
+                            <button id="countyBtnRight"><i class= "fa fa-arrow-right" aria-hidden="true"></i></button>
+                            <button id="countyBtnLeft"><i class= "fa fa-arrow-left" aria-hidden="true"></i></button>
+                            <button id="ainmBtn"><i class="fa fa-check"></i>
+                            <button id="fwdBtn"><i class= "fa fa-arrow-right" aria-hidden="true"></i></button>
+                <button id="bckBtn"><i class= "fa fa-arrow-left" aria-hidden="true"></i></button>
+
+                <button id="play"><i class= "fa fa-check" aria-hidden="true"></i></button>
+
+                <button id="btnTalk"><i class= "fa fa-commenting-o" aria-hidden="true"></i></button>
+            <div>
+
+
+                <!--Character Select resources -->
+
+                <div id="naContaeResources">
+
+                    <div id="whichAinm">
+                        <div id="countyColours">
+                        </div>
+                        <div id="countyMain">
+                        </div>
+                        <button id="play"><i class= "fa fa-check" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div id="middle-panel">
+                        <p id="output">
+
+
+
+
+
+    </body>
+    <script src="jqueriesGeaga.js"></script>    
+    <script src="bundle.js"></script>
+</html>

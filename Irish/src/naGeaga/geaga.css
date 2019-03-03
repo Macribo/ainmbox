@@ -1,0 +1,1582 @@
+*{
+        box-sizing: border-box;
+}
+/*MOBILE SETTINGS - samsung galaxy s5*/
+@media only screen and (max-device-width: 480px){
+        html
+        {
+                font-family: INFO56_0;
+                color: #222222;  
+                font-size: 16px;
+                padding: 0px;
+                margin: 0px;
+                transition: 1s background-image ease-out;
+                background-color:white;
+        }
+
+        @font-face
+        {
+                font-family: INFO56_0;
+                src: url("./INFO56_0.ttf");
+        }  
+        @font-face
+        {
+                font-family: myFirstFont;
+                src: url("./myFirstFont.ttf");
+        }  
+
+        @font-face
+        {
+                font-family: aonchlo;
+                src: url("../../fonts/aonchlo.ttf");
+        }
+
+
+        /*flex-boxes*/
+
+
+        .item {
+        }
+        /************/
+
+
+
+
+
+
+        #mapFrame{
+                position:absolute;
+                display:inline;
+                background-image:url('../../images/mapFrame.png');
+                top:36px;
+                left:339px;
+                height:544px;
+                width:862px;
+                z-index:1;
+                padding-left:0px;
+                padding-top:0px;
+                margin-top:0px;
+                margin-right:0px;
+                background-repeat:no-repeat;
+
+
+        }   
+        #geagaCanvas{
+        position:absolute;
+            top:0px;
+    left:0px;
+}
+
+        span.withTitle {
+                font-size: 30px;
+        }
+
+        h1
+        {
+                text-align: center;
+                font-family: computer_pixel-7;
+                font-size: 80px;
+                padding-bottom: 0px;
+                padding-top: 20px;
+                font-weight: normal;
+
+                margin-bottom:0px ;
+                margin-top:0px;
+        }
+
+
+
+
+        #alt-title{
+                opacity:0;
+
+        }
+        #title:hover{
+
+
+
+
+                font-size: 14px;
+        }
+
+        #súile{
+                background-repeat:no-repeat;
+                position:absolute;
+                width:170px;
+                height:85px;
+                background-image:url("../../images/suile.png");
+                bottom:308px;
+                right:137px;
+                z-index:900;
+                opacity:1;
+
+
+
+
+        }
+        #deirGeaga1{
+                top:20px;
+                left:20px;
+                height:0px;
+                line-height:0px;
+                position:relative;
+                text-align:center;
+                font-family: aonchlo;
+                z-index:600;
+                color:#730a0a;
+                margin: 0px;
+                font-size: 85px;
+        }
+        #deirGeaga2
+        {
+                font-family: aonchlo;
+                position:absolute;
+                top:211px;
+                left:532px;
+                margin:0px auto;
+                margin-top: 0px;
+                font-size:35px;
+                z-index:600;
+                width:380px;
+
+        }
+
+        img
+        {
+                margin: 0px auto;
+                display: block;
+                margin-bottom: 20px;
+        }
+        /*BUTTONS*/
+
+        button
+        {
+                height: 59px;
+                width: 59px;
+
+                font-size: 20px;
+                color: #222222;
+
+                -webkit-user-select: none;
+                -moz-user-select: none;
+
+                background-color:transparent;
+                border:none;
+                outline:none;
+
+                z-index:901;
+
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg) ;
+        }
+        #btnTalk{
+                position:absolute;
+                left:101px;
+                top:22px;
+                animation:fade-in 0.5s;
+                display:none;
+                z-index:901;
+        }
+        button:hover{
+                background-image:url('../../images/btnBg3.png');
+        }
+
+
+        #bckBtn{
+                display:none;
+                position:relative;
+                top:22px;
+                left:-37px;
+                z-index:899;
+                animation:fade-in 0.5s;
+        }
+        #fwdBtn{display:none;
+                position:absolute;
+                top: 22px;
+                left:171px;
+                z-index:898;
+
+                animation:fade-in 0.5s;
+
+
+        }
+
+        #leavePanel{
+                display:none;
+                position:absolute;
+                height:251px;
+                width:557px;
+                left:473px;
+                top:140px;
+                z-index:300;
+                background-image:url('../../images/geagaFrame.png');
+        }
+        #leaveOptions{
+                position:absolute;
+                display:none;
+                height:200px;
+                width:200px;
+                left:0px;
+                z-index:500;
+                top:0px;
+        }
+        #leave{
+                position:relative;
+                top:131px;
+                left:206px;
+        }
+
+        #leaveTxt{
+                position:relative;
+                font-size:35px;
+                top:60px;
+                left:160px;
+        }
+        #noLeave{
+                position:relative;
+                top:131px;
+                left:240px;
+        }
+
+
+        #play {
+                display:none;
+                position:relative;
+                background-color: #207720;
+                top:234px;
+                left:38px;
+                z-index:20;	
+        }
+
+        #allChat{
+                display:none;
+        }
+        #playerPortrait{
+                position:absolute;
+                background-image:url('../../images/imreoir.gif');
+                top:461px;
+                left:866px;
+                height:156px;
+                width:111px;
+                z-index:301;
+        }
+        #chatPanel{
+                position:absolute;
+                background-image:url('../../images/geagaFrame.png');
+                top:150px;
+                left:461px;
+                height:253px;
+                width:557px;
+        }
+        #geaga{
+                opacity:1;
+                position:absolute;
+                width:441px;
+                height:621px;
+                background-image:url("../../images/geaga5.png");
+                bottom:-127px;
+                right:-1077px;
+                z-index:300;
+                background-repeat:no-repeat; 
+        }
+
+
+        #deetsFrame{
+                position:relative;
+                background-image:url("../../images/deetsFrame.png");
+                top:-540px;
+                right:410px;
+                width:350px;
+                height:352px;
+                background-repeat:no-repeat;
+                z-index:2;
+        }
+
+
+        /**STATUE STUFF*/
+
+
+        #bearla{
+                position:absolute;
+                color:black;
+                font-size: 36px;
+                text-align:center;
+                top: 134px;
+                left:-41px;
+                width: 115px;
+                z-index:32;
+                line-height: 27px;
+                word-spacing:-1px;
+                font-family:INFO56_0; 
+        }
+
+       
+
+
+        /*PLAYER INPUT ELEMENTS*/
+
+
+        #inputElements
+        {
+                position: relative;
+                bottom:-250px;
+                left: 0px;
+                width: 260px;
+                height:50px;
+                padding: 2px 2px 2px 5px;
+                background-color: rgba(0,0,0,0.1);
+                z-index: 100;
+        }
+
+
+
+
+
+
+        /*
+        naContae css imported 
+         */
+
+
+        #naContaeResources{
+
+                top:-418px;
+                left:0px;
+                position:absolute;
+                display:none;
+        }
+
+        input,textarea{
+                font-size:40px;
+                padding:5px;
+                color: green;
+                font-family: INFO56_0;
+
+                z-index:500;  
+        }
+
+        #emblem{
+
+                opacity:0;
+                position:absolute;
+                top:4px;
+                left:26px;
+                background-image:url("../../images/emblem.gif");
+                width:513px;
+                height:252px;
+                transition: 2s background-image ease-out;
+        }
+
+        #langLevel{
+                top:400px;
+                left:0px;
+
+        }
+        /*flex-boxes*/
+
+        .item {
+
+        }
+        /************/
+
+
+        /*PANELS*/
+        #canvas-panel{
+                position:absolute;
+                top:117px;
+                left:-266px; 
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg) ;
+
+
+        }
+
+        #middle-panel{
+
+                margin-left:360px;
+                min-width:700px;
+                padding-right: 0px;
+                padding-left: 0px;
+        }
+
+        span.withTitle {
+                font-size: 30px;
+        }
+
+        h1
+        {
+                text-align: center;
+                font-family: computer_pixel-7;
+                font-size: 80px;
+                padding-bottom: 0px;
+                padding-top: 20px;
+                font-weight: normal;
+                margin-bottom:0px ;
+                margin-top:0px;
+        }
+
+
+
+
+        #alt-title{
+                opacity:0;
+
+        }
+        #title:hover{
+
+
+
+
+                font-size: 14px;
+        }
+        #output2
+        {
+                text-align: center;
+                position:relative;
+                top:-4px;
+                left:-27px;
+                font-family: aonchlo;
+                margin: 0px auto;
+                margin-top: 16px;
+                font-size: 35px;
+                z-index:500;
+        }
+        #inputElements
+        { opacity:0;
+                position:absolute;
+                bottom: 260px;
+                left: 349px;
+                width: 0px;
+                height:0px;
+
+        }
+        #ctrlsFrame{
+                display:none;
+                position:absolute;
+                top:22px;
+                left:16px;
+                width:260px;
+                height:101px;
+                z-index:20;
+                animation:fade-in 0.3s;
+                background-image:url('');
+        }
+
+        #mainText{
+                position:absolute;
+                top:3px;
+                left: 450px;
+                width: 800px;
+        }
+
+        #inputName{
+                margin:20px;
+                position:relative;
+                display:inline;
+                left:94px;
+                top:80px;
+                width: 300px;
+                height:50px;
+                background:rgba(5,5,5,.85);
+                opacity:1;
+        }
+
+        #inputLabel{
+                margin:20px;
+                position:relative;
+                display:inline;
+                width:300px;
+                text-align:center;
+                font-family:INFO56_0;
+                font-size:40px;
+                top:110px;
+                left:164px;
+                z-index:500;
+                opacity:1;
+                color:#000;
+        }
+
+        #ainmBtn{
+                margin:20px;
+                position:relative;
+                display:none;
+                font-size:46pt;
+                text-align:center;
+                top:0px;
+                left:81px;
+                opacity:1;
+                z-index:905;
+                color:#51bd4f;
+        }
+
+
+        img
+        {
+                margin: 0px auto;
+                display: block;
+                margin-bottom: 20px;
+        }
+        /*BUTTONS*/
+
+
+
+        #play {
+                display:none;
+                background-color: #222222;
+                top:460px;
+                left: 176px;
+
+        }
+
+
+        #btnLvL { 
+                display:none;
+                position:absolute;
+                top: 22px;
+                left:29px;
+                border:0px;
+        }
+        #btnLvR {
+                display:none;
+                position:absolute;
+                top:22px;
+                left: 176px;
+                border:0px;
+        }
+
+        #levelSelect{
+                display:none;
+                position:absolute;
+                color:#51bd4f;
+                font-size:46pt;
+                text-align:center;
+                top:22px;
+                left:103px;
+
+
+
+        }
+        #countyBtnLeft {
+                position:absolute;
+                display:none;
+                top:22px;
+                left:29px;
+                height: 60px;
+                width: 60px;
+                z-index:500;
+        }
+        #countyBtnRight {
+                position:absolute;
+                display:none;
+                top:22px;
+                left:176px;
+                height: 60px;
+                width: 60px;
+                z-index:500;
+        }
+
+        #tidyBox1{
+                display:none;
+                position:absolute;  
+                background-color:white;
+                width:547px;
+                border: 5px solid;
+                border-radius: 20px;
+                border-color:#033508;
+                height:300px;
+                left:444px;
+                top:513px;
+                transition: 1s background-image ease-out;
+
+        }
+        #bearla{
+                position:absolute;
+                color:black;
+                font-size: 36px;
+                text-align:center;
+                top: 134px;
+                left:-41px;
+                width: 115px;
+                z-index:32;
+                line-height: 27px;
+                word-spacing:-1px;
+        }
+        /*PLAYER INPUT ELEMENTS*/
+
+        #portrait {
+                position:absolute;
+                margin:0px;
+                padding:0px;
+                width:111px;
+                height:156px;
+                left:-399px;
+                top:202px;
+                background-image:url("../../images/imreoir.gif");
+                z-index:32;
+                opacity:0;
+        }
+
+
+        #joinTeam{
+
+                position:absolute;
+                display:none;
+                top:24px;
+                left:103px;
+
+        }
+
+
+
+
+        ::placeholder{
+                color:green;
+                font-size: 35px; 
+                font-family: INFO56_0;
+                text-align:center;
+        }
+
+
+
+        #location{
+                position: absolute;
+                bottom:158px;
+                left: 22px;
+                opacity: 0;
+        }
+
+        #imreoirWLv{
+                display:none;
+                position:absolute;
+                top:68px;
+                left:185px;
+                height:175px;
+                width:175px;
+                z-index:32;
+                background-image:url("../../images/imreoir5.png");
+        }
+        #countyColours {
+                position:absolute;
+                top:86px;
+                left:538px;
+                background-image:url("../../images/countyColours.png");
+                opacity:0.7;
+                width:403px;
+                height:306px;
+                z-index: 3;
+        }
+        #countyMain {
+                position:absolute;
+                top:86px;
+                left:538px;
+                background-image:url("../../images/countyMain.png");
+                opacity:1;
+                width:403px;
+                z-index:4;
+                height:306px;
+
+        }
+
+        #countyMain:hover{
+
+                animation: fade-out 1s forwards;
+
+        }
+        #badge{
+                position:absolute;
+                top:55px;
+                left:397px;
+                background-image:url("../../images/badges.png");
+                z-index: 20;
+                opacity:1;
+                width:80px;
+                height:80px;
+
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg) ;
+
+
+        }
+
+        #contae{
+                position:relative;
+                text-align: center;
+                width: 601px;
+                left:111px;
+                padding-left:0px; 
+                font-family:INFO56_0;
+                bottom: 250px;
+                font-size:40px;
+                z-index:500;
+        }
+
+        .item{
+        }
+
+
+
+
+
+        .fadeText{
+                animation: fade-in 2s;
+        } 
+
+
+}@keyframes delay-fade-in{
+        0% {opacity:0;}
+        75%{opacity:0;}
+        100%{opacity:1;}
+
+}
+
+
+@keyframes delay-fade-out{
+        0% {opacity:1;}
+        75%{opacity:1;}
+        100%{opacity:0.2;}
+
+}
+
+@keyframes fade-in{
+        0% {opacity:0;}
+
+        100% {opacity:1;} 
+}
+@keyframes fade-out{
+        0%{opacity:1;}
+
+        100%{opacity:0;} 
+
+}
+
+@keyframes slide-button-right{
+        0%{left:163px;}
+        100%{left: 229px;}
+
+}
+@keyframes slide-button-left{
+        0%{left:203px;}
+        100%{left: 163px;}
+} 
+@keyframes county-select-mode{
+        0%{opacity: 0;}
+        100%{opacity:1;}
+}
+
+@keyframes dim {
+        0%{opacity: 1;}
+        100%{opacity:0.25;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width: 668px){
+
+
+
+        html
+        {
+                font-family: INFO56_0;
+                color: #222222;  
+                font-size: 16px;
+                padding: 0px;
+                margin: 0px;
+                transition: 1s background-image ease-out;
+                background-color:#white;
+        }
+
+        @font-face
+        {
+                font-family: INFO56_0;
+                src: url("./INFO56_0.ttf");
+        }  
+        @font-face
+        {
+                font-family: myFirstFont;
+                src: url("./myFirstFont.ttf");
+        }  
+
+        @font-face
+        {
+                font-family: aonchlo;
+                src: url("../../fonts/aonchlo.ttf");
+        }
+
+
+        /*flex-boxes*/
+
+
+        .item {
+        }
+        /************/
+
+
+
+
+
+        span.withTitle {
+                font-size: 30px;
+        }
+
+        h1
+        {
+                text-align: center;
+                font-family: computer_pixel-7;
+                font-size: 80px;
+                padding-bottom: 0px;
+                padding-top: 20px;
+                font-weight: normal;
+
+                margin-bottom:0px ;
+                margin-top:0px;
+        }
+
+
+
+
+        #alt-title{
+                opacity:0;
+
+        }
+        #title:hover{
+
+
+
+
+                font-size: small;
+        }
+
+        #súile{
+                background-repeat:no-repeat;
+                position:absolute;
+                width:170px;
+                height:85px;
+                background-image:url("../../images/suile.png");
+                bottom:308px;
+                right:137px;
+                z-index:900;
+                opacity:1;
+
+
+
+
+        }
+        #deirGeaga1{
+                top:20px;
+                left:20px;
+                height:0px;
+                line-height:0px;
+                position:relative;
+                text-align:center;
+                font-family: aonchlo;
+                z-index:600;
+                color:#730a0a;
+                margin: 0px;
+                font-size: 85px;
+        }
+        #deirGeaga2
+        {
+                position:absolute;
+                top:166px;
+                left:171px;
+                margin:0px auto;
+                margin-top: 0px;
+                font-size:35px;
+                z-index:600;
+                width:380px;
+                font-family: aonchlo;
+
+        }
+
+        img
+        {
+                margin: 0px auto;
+                display: block;
+                margin-bottom: 20px;
+        }
+        /*BUTTONS*/
+
+        button
+        {
+                height: 59px;
+                width: 59px;
+
+                font-size: 40px;
+                color: #222222;
+
+                -webkit-user-select: none;
+                -moz-user-select: none;
+
+                background-color:transparent;
+                border:none;
+                outline:none;
+
+                z-index:901;
+
+        }
+        #btnTalk{
+               position:absolute;
+                left:105px;
+                top:20px;
+                animation:fade-in 0.5s;
+                display:none;
+                z-index:901;
+        }
+        button:hover{
+                background-image:url('../../images/btnBg3.png');
+        }
+
+
+        #bckBtn{
+                display:none;
+                position:relative;
+                top:22px;
+                left:-37px;
+                z-index:899;
+                animation:fade-in 0.5s;
+        }
+        #fwdBtn{display:none;
+                position:absolute;
+                top: 22px;
+                left:171px;
+                z-index:898;
+
+                animation:fade-in 0.5s;
+
+
+        }
+
+        #leavePanel{
+                display:none;
+                position:absolute;
+                height:251px;
+                width:557px;
+                left:473px;
+                top:140px;
+                z-index:300;
+                background-image:url('../../images/geagaFrame.png');
+        }
+        #leaveOptions{
+                position:absolute;
+                display:none;
+                height:200px;
+                width:200px;
+                left:0px;
+                z-index:500;
+                top:0px;
+        }
+        #leave{
+                position:relative;
+                top:131px;
+                left:206px;
+        }
+
+        #leaveTxt{
+                position:relative;
+                font-size:35px;
+                top:60px;
+                left:160px;
+        }
+        #noLeave{
+                position:relative;
+                top:131px;
+                left:240px;
+        }
+
+
+        #play {
+                display:none;
+                position:relative;
+                background-color: #207720;
+                top:234px;
+                left:38px;
+                z-index:20;	
+        }
+
+        #allChat{
+                display:none;
+        }
+        #playerPortrait{
+                position:absolute;
+                background-image:url('../../images/imreoir.gif');
+                top:98px;
+                left:278px;
+                height:156px;
+                width:111px;
+                z-index:601;
+        }
+        #chatPanel{
+                position:absolute;
+                background-image:url('../../images/geagaFrame.png');
+                top:123px;
+                left:120px;
+                height:253px;
+                width:557px;
+        }
+        #geaga{
+                opacity:1;
+                position:absolute;
+                width:441px;
+                height:621px;
+                background-image:url("../../images/geaga5.png");
+                bottom:-102px;
+                right:-192px;
+                z-index:300;
+                background-repeat:no-repeat; 
+        }
+
+
+        #deetsFrame{
+                position:relative;
+                background-image:url("../../images/deetsFrame.png");
+                top:-540px;
+                right:410px;
+                width:350px;
+                height:352px;
+                background-repeat:no-repeat;
+                z-index:2;
+        }
+
+
+        /**STATUE STUFF*/
+
+
+        #bearla{
+                position:absolute;
+                color:black;
+                font-size: 36px;
+                text-align:center;
+                top: 258px;
+                left:-41px;
+                width: 154px;
+                z-index:32;
+                line-height: 27px;
+                word-spacing:-1px;
+                font-family:INFO56_0; 
+        }
+
+#shield-holder{top:10%;
+                left:10%;
+background-repeat:no-repeat;
+    
+padding:0px;
+margin:0px;position:absolute;
+    width:290px;
+    height:290px;
+    padding:10px;
+    background-image:url("../../images/dealbh.jpg");
+    z-index:20;
+}
+
+
+
+        #badge{
+      
+       position:relative;
+top:20px;
+left:16px;
+background-image:url("../../images/badges.png");
+                z-index:20;
+                opacity:1;
+                width:80px;
+                height:80px
+        }
+
+
+        /*PLAYER INPUT ELEMENTS*/
+
+
+        #inputElements
+        {
+                position: relative;
+                bottom:-250px;
+                left: 0px;
+                width: 0px;
+                height:0px;
+                padding: 2px 2px 2px 5px;
+                background-color: rgba(0,0,0,0.1);
+                z-index: 100;
+        }
+
+
+
+
+
+
+        /*
+        naContae css imported 
+         */
+
+
+        #naContaeResources{
+
+                top:-418px;
+                left:0px;
+                position:absolute;
+                display:none;
+        }
+
+        input,textarea{
+                font-size:40px;
+                padding:5px;
+                color: green;
+                font-family: INFO56_0;
+
+                z-index:500;  
+        }
+
+        #emblem{
+
+                opacity:0;
+                position:absolute;
+                top:24px;
+                left:20px;
+                background-image:url("../../images/emblem.gif");
+                width:512px;
+                height:240px;
+                transition: 2s background-image ease-out;
+        }
+
+        #langLevel{
+                top:400px;
+                left:0px;
+
+        }
+        /*flex-boxes*/
+
+        .item {
+
+        }
+        /************/
+
+
+        /*PANELS*/
+        #canvas-panel{
+                position:fixed;
+                top:10%;
+                left:23%; 
+
+
+        }
+
+        #mapFrame{
+         position:absolute;
+         background-image:url('../../images/mapFrame.png');
+                top:0px;
+                left:0px;
+                height:544px;
+                width:862px;
+                z-index:100;
+background-repeat:no-repeat;
+        }   
+
+
+        #loading{
+         position:absolute;
+         background-image:url('../../images/loading.png');
+                top:0px;
+                left:0px;
+                height:544px;
+                width:862px;
+background-repeat:no-repeat;
+ animation:fade-out 2s forwards;       }   
+
+
+ 
+
+        #middle-panel{
+
+                margin-left:360px;
+                min-width:700px;
+                padding-right: 0px;
+                padding-left: 0px;
+        }
+
+        span.withTitle {
+                font-size: 30px;
+        }
+
+        h1
+        {
+                text-align: center;
+                font-family: computer_pixel-7;
+                font-size: 80px;
+                padding-bottom: 0px;
+                padding-top: 20px;
+                font-weight: normal;
+                margin-bottom:0px ;
+                margin-top:0px;
+        }
+
+
+
+
+        #alt-title{
+                opacity:0;
+
+        }
+        #title:hover{
+
+
+
+
+                font-size: 14px;
+        }
+        #output2
+        {
+                text-align: center;
+                position:relative;
+                top:32px;
+                left:-14px;
+                font-family: aonchlo;
+                margin: 0px auto;
+                margin-top: 16px;
+                font-size: 35px;
+                z-index:500;
+        }
+        #inputElements
+        { opacity:0;
+                position:absolute;
+                bottom: 260px;
+                left: 349px;
+                width: 0px;
+                height:0px;
+
+        }
+        #ctrlsFrame{
+                display:none;
+                position:absolute;
+                top:32%;
+                left:3%;
+                width:260px;
+                height:101px;
+                z-index:20;
+                animation:fade-in 0.3s;
+        }
+
+        #mainText{
+                position:absolute;
+                top:3px;
+                left: 450px;
+                width: 800px;
+        }
+
+        #inputName{
+                margin:20px;
+                position:relative;
+                display:inline;
+                left:94px;
+                top:80px;
+                width: 300px;
+                height:50px;
+                background:rgba(5,5,5,.85);
+                opacity:1;
+        }
+
+        #inputLabel{
+                margin:20px;
+                position:relative;
+                display:inline;
+                width:300px;
+                text-align:center;
+                font-family:INFO56_0;
+                font-size:40px;
+                top:90px;
+                left:30%;
+                z-index:500;
+                opacity:1;
+                color:#000000;
+        }
+
+        #ainmBtn{
+                margin:20px;
+                position:relative;
+                display:none;
+                font-size:46px;
+                text-align:center;
+                top:0px;
+                left:81px;
+                opacity:1;
+                z-index:905;
+                color:#51bd4f;
+        }
+
+
+        img
+        {
+                margin: 0px auto;
+                display: block;
+                margin-bottom: 20px;
+        }
+        /*BUTTONS*/
+
+
+
+        #play {
+                display:none;
+                background-color: #222222;
+                top:460px;
+                left: 176px;
+
+        }
+
+
+        #btnLvL { 
+                display:none;
+                position:absolute;
+                top: 22px;
+                left:29px;
+                border:0px;
+        }
+        #btnLvR {
+                display:none;
+                position:absolute;
+                top:22px;
+                left: 176px;
+                border:0px;
+        }
+
+        #levelSelect{
+                display:none;
+                position:absolute;
+                color:#51bd4f;
+                font-size:46px;
+                text-align:center;
+                top:22px;
+                left:103px;
+
+
+
+        }
+        #countyBtnLeft {
+                position:absolute;
+                display:none;
+                top:22px;
+                left:29px;
+                height: 60px;
+                width: 60px;
+                z-index:500;
+        }
+        #countyBtnRight {
+                position:absolute;
+                display:none;
+                top:22px;
+                left:176px;
+                height: 60px;
+                width: 60px;
+                z-index:500;
+        }
+        #geagaCanvas{
+        absoluteion:absolute;
+            top:0px;
+    left:0px;
+}
+        #tidyBox1{
+         display:none;
+         position:absolute;  
+                width:547px;
+                height:300px;
+                left:15%;
+                top:21%;
+                transition: fade-in 1s;
+
+        }
+        #bearla{
+                font-family: INFO56_0;
+                position:absolute;
+                color:black;
+                font-size: 36px;
+                text-align:center;
+                top: 325%;
+                left:-41px;
+                width: 115px;
+                z-index:32;
+                line-height: 27px;
+                word-spacing:-1px;
+        }
+        /*PLAYER INPUT ELEMENTS*/
+
+        #portrait {
+                position:absolute;
+                margin:0px;
+                padding:0px;
+                width:111px;
+                height:156px;
+                left:414px;
+                top:122px;
+                background-image:url("../../images/imreoir.gif");
+                z-index:32;
+                opacity:0;
+        }
+
+
+        #joinTeam{
+
+                position:absolute;
+                display:none;
+                top:24px;
+                left:103px;
+
+        }
+
+
+
+
+        ::placeholder{
+                color:green;
+                font-size: 35px; 
+                font-family: INFO56_0;
+                text-align:center;
+        }
+
+
+
+        #location{
+                position: absolute;
+                bottom:158px;
+                left: 22px;
+                opacity: 0;
+        }
+
+        #imreoirWLv{
+                display:none;
+                position:absolute;
+                top:85px;
+                left:185px;
+                height:175px;
+                width:175px;
+                z-index:32;
+                background-image:url("../../images/imreoir5.png");
+        }
+        #countyColours {
+                position:absolute;
+                top:86px;
+                left:538px;
+               /* background-image:url("../../images/countyColours.png");
+                opacity:0.7;
+                width:403px;
+                height:306px;
+                z-index: 3;*/
+        }
+        #countyMain {
+                position:absolute;
+                top:86px;
+                left:538px;
+         /*       background-image:url("../../images/countyMain.png");
+                opacity:1;
+                width:403px;
+                z-index:4;
+                height:306px;
+*/
+        }
+
+        #countyMain:hover{
+
+                animation: fade-out 1s forwards;
+
+        }
+               #contae{
+                position:relative;
+                text-align: center;
+                width: 601px;
+                left:111px;
+                padding-left:0px; 
+                font-family:INFO56_0;
+                bottom: 250px;
+                font-size:40px;
+                z-index:500;
+        }
+
+        .item{
+        }
+
+        .fadeText{
+                animation: fade-in 2s;
+        } 
+
+
+        @keyframes delay-fade-in{
+                0% {opacity:0;}
+                75%{opacity:0;}
+                100%{opacity:1;}
+
+        }
+
+
+        @keyframes delay-fade-out{
+                0% {opacity:1;}
+                75%{opacity:1;}
+                100%{opacity:0.2;}
+
+        }
+
+        @keyframes fade-in{
+                0% {opacity:0;}
+
+                100% {opacity:1;} 
+        }
+        @keyframes fade-out{
+                0%{opacity:1;}
+
+                100%{opacity:0;} 
+
+        }
+
+        @keyframes slide-button-right{
+                0%{left:163px;}
+                100%{left: 229px;}
+
+        }
+        @keyframes slide-button-left{
+                0%{left:203px;}
+                100%{left: 163px;}
+        } 
+        @keyframes county-select-mode{
+                0%{opacity: 0;}
+                100%{opacity:1;}
+        }
+
+        @keyframes dim {
+                0%{opacity: 1;}
+                100%{opacity:0.25;}
+
+        }
+
+
+
+
+}
