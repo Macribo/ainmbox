@@ -19,7 +19,7 @@ let englishProse = [
 ];
 
 
-
+let aboutIsRunning = false;
 verse2 = () => {
     setTimeout(function() {
       $('#demo').text('');
@@ -292,12 +292,13 @@ $(document).ready(function() {
         break;
       case 10:
         console.log('and then...');
+        if(aboutIsRunning){
         amergin.play();
         goToSlide(10);
         setTimeout(function() {
           $('#demo').fadeTo('slow', 1);
         }, 2000);
-        break;
+    }break;
 
       case 11:
         goToSlide(11);
@@ -338,7 +339,7 @@ $(document).ready(function() {
 
         break;
       case 19:
-        wait = 7000;
+        wait = 8000;
 
         goToSlide(19);
 
@@ -413,6 +414,9 @@ $(document).ready(function() {
         case 32:
         console.log('and then...');
         goToSlide(32);
+        $('#about').css({'display':'none'});
+    $('#btn-menu').fadeTo('slow',1);
+
 
         break;
 
@@ -447,8 +451,10 @@ $(document).ready(function() {
   aboutGo = () => {
     $('#btn-menu').fadeOut();
     aboutIsRunning = true;
-    goToSlide(0);
+    goToSlide(0);setTimeout(function(){
     $('#holdSlide').fadeTo('slow', 1);
+
+    },500)
     // $('#hold-frame').css('background-image', darkpic)
   };
 
