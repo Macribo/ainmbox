@@ -49,36 +49,38 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+
   <body>
-    <audio id="hum1" loop>
-      <source src="../assets/audio/hum1.mp3" />
-    </audio>
-    <div class="col-12" id="main-bg">
-      <div class="row">
-        <div class="col-4" id="smaller">col-4</div>
-        <div class="col-8" id="larger">col-8</div>
-      </div>
-      <div class="row">
-        <div class="col-12" id="ctrls"></div>
-      </div>
-      <button id="fwdBtn">
-        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-      </button>
-      <button id="bckBtn">
-        <i class="fa fa-arrow-left" aria-hidden="true"></i>
-      </button>
-      <button id="play">
-        <i class="fa fa-check" aria-hidden="true"></i>
-      </button>
 
-      <p id="output2"></p>
-
-      <div id="dealbhMask"></div>
-      <div id="scribble"></div>
-      <div id="badge"></div>
-
-      <p id="bearla">Hover on Irish text for English Translation</p>
-    </div>
+      <div class="row mx-auto" id="main-bg">
+          <div class="col-sm-4" id="smaller">            
+            <div id="dealbhMask"></div>
+            <div id="scribble">
+              <div id="badge"  class="mx-auto"></div>
+            </div>
+         
+          <button id="fwdBtn">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+            <button id="bckBtn">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button id="play">
+              <i class="fa fa-check" aria-hidden="true"></i>
+            </button>
+          </div>
+          <div class="col-sm-8" id="larger">
+              <p id="output2"></p>
+        
+  </div>
+        <div class="row">
+            <div class="col-sm-4">      <p id="bearla">Hover on Irish text for English Translation</p></div>
+            <div class="col-sm-8"></div>
+          </div>
+        <audio id="hum1" loop>
+          <source src="../assets/audio/hum1.mp3" />
+        </audio>
+     
   </body>
   <script src="../assets/scripts/jqueries.js"></script>
   <script src="../assets/scripts/bundle.js"></script>
