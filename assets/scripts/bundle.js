@@ -40,7 +40,7 @@
           });
           $('#output').mouseout(function() {
             $('#bearla').text('');
-            $(this).css('color', '#731715');
+            $(this).css('color', '#000');
           });
           document.querySelector('#bckBtn').onmouseenter = event => {
             document.querySelector('#bearla').innerHTML = 'back';
@@ -57,12 +57,12 @@
             $('#output2 span').hover(function() {
               $('#bearla').text($(this).attr('id'));
               $(this).css('color', '#e35ee5');
-              $('div').slidedown();
+              //   $('div').slidedown();
             });
 
             $('#output2 span').mouseout(function() {
               $('#bearla').text('');
-              $(this).css('color', '#222222');
+              $(this).css('color', '#000');
             });
           });
 
@@ -70,12 +70,12 @@
             $('#output2 span').hover(function() {
               $('#bearla').text($(this).attr('id'));
               $(this).css('color', '#e35ee5');
-              $('div').slidedown();
+              //   $('div').slidedown();
             });
 
             $('#output2 span').mouseout(function() {
               $('#bearla').text('');
-              $(this).css('color', '#222222');
+              $(this).css('color', '#000');
             });
           });
 
@@ -83,12 +83,12 @@
             $('#output2 span').hover(function() {
               $('#bearla').text($(this).attr('id'));
               $(this).css('color', '#e35ee5');
-              $('div').slidedown();
+              //   $('div').slidedown();
             });
 
             $('#output2 span').mouseout(function() {
               $('#bearla').text('');
-              $(this).css('color', '#222222');
+              $(this).css('color', '#000');
             });
           });
 
@@ -99,7 +99,7 @@
 
           $('#output2 span').mouseout(function() {
             $('#bearla').text('');
-            $(this).css('color', '#222222');
+            $(this).css('color', '#000');
           });
 
           $('#deirGeaga1').hover(function() {
@@ -109,7 +109,7 @@
 
           $('#deirGeaga1').mouseout(function() {
             $('#bearla').text('');
-            $(this).css('color', '#730a0a');
+            $(this).css('color', '#000');
           });
 
           $('#btnTalk').click(function() {
@@ -122,7 +122,7 @@
 
             $('#deirGeaga2 span').mouseout(function() {
               $('#bearla').text('');
-              $(this).css('color', '#222222');
+              $(this).css('color', '#000');
             });
           });
 
@@ -182,6 +182,7 @@
         fwdBtn.addEventListener('click', fwdBtnHandler, false);
         bckBtn.addEventListener('click', bckBtnHandler, false);
         playBtn.addEventListener('click', playHandler, false);
+        noplayBtn.addEventListener('click', noplayHandler, false);
 
         //Dispay the player's location
 
@@ -190,6 +191,10 @@
           window.location.replace(
             'http://ribodev.com//3ire3ile/src/naGeaga/geaga.html'
           );
+        }
+
+        function noplayHandler() {
+          window.location.replace('https://macribo.github.io/ainmCleite/');
         }
         // function mouseoverHandler(){
         // fwdBtn.style.backgroundImage='("../images/btnBg3.png")';
@@ -252,6 +257,7 @@
           //end of manifesto - begin game y/n?
           if (story === 5) {
             playBtn.style.display = 'inline';
+            noplayBtn.style.display = 'inline';
             // fwdBtn.style.animation='fade-out 0.25s forwards';
             fwdBtn.style.visibility = 'hidden';
             playBtn.style.animation = 'fade-in 1s';
