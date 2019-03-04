@@ -50,23 +50,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body>
-    <div class="row" id="main-bg">
-      <div class="col-sm-4" id="smaller">
+  <div class="row" id="main-bg">
+      <body>
+        <div id="fwdbck">
+          <button id="play">
+            <i class="fa fa-check fa-4x" aria-hidden="true"></i>
+          </button>
+          <button id="noplay">
+                <i class="fas fa-times fa-4x" aria-hidden="true"></i>
+              </button>
+        </div>
+      <div class="col-sm-3" id="smaller">
         <p id="bearla">Hover on Irish text for English Translation</p>
 
         <button id="fwdBtn">
-          <i class="fa fa-arrow-right fa-4x" aria-hidden="true"></i>
+          <i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i>
         </button>
         <button id="bckBtn">
-          <i class="fa fa-arrow-left fa-4x" aria-hidden="true"></i>
-        </button>
-        <button id="play">
-          <i class="fa fa-check fa-4x" aria-hidden="true"></i>
+          <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i>
         </button>
       </div>
 
-      <div class="col-sm-8" id="larger">
+      <div class="col-sm-9 center" id="larger">
         <p id="output2"></p>
       </div>
     </div>
