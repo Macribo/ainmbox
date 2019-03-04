@@ -3,14 +3,30 @@
 html {
   overflow: hidden;
 }
+
+#main-bg {
+  background-image: url('../images/backgrounds/mainBG.png');
+
+  background-size: 100% 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+
+  overflow: hidden;
+  /* border: 2px solid green; */
+  height: 100%;
+  width: 100%;
+}
 body {
   padding: 0;
   margin: 0;
+  /*
   background-size: 100% 100%;
 
-  background-image: url('../images/backgrounds/bg_1.png');
-  /* background-size:cover; */
+  background-image: url('../src/images/mainBG.png');
+  background-size: cover;
   overflow: hidden;
+  background-repeat: no-repeat; */
   /* color:green; */
 }
 
@@ -35,7 +51,7 @@ body {
   z-index: 9999 !important; /* Sit on top */
   left: 0;
   bottom: 0;
-  background-color: white;
+  /* background-color: white; */
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   background-size: contain;
@@ -60,8 +76,9 @@ body {
 }
 #btn-panel {
   position: fixed;
+
   /* border:2px solid green; */
-  top: 44%; /* 25% from the top */
+  top: 34%; /* 25% from the top */
   width: 100%; /* 100% width */
   text-align: center; /* Centered text/links */
   margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
