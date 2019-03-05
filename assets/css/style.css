@@ -39,7 +39,9 @@ body {
   font-family: unciale;
   src: url('../fonts/EagleLake.ttf');
 }
-
+#start {
+  z-index: 15000 !important;
+}
 #btn-menu,
 #blue-cape-menu,
 .test {

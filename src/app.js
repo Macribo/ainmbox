@@ -416,6 +416,7 @@ $(document).ready(function() {
         goToSlide(32);
         $('#about').css({'display':'none'});
     $('#btn-menu').fadeTo('slow',1);
+    $('#btn-panel').animate({top:'65%'});
 
 
         break;
@@ -464,10 +465,10 @@ $(document).ready(function() {
       background: 'black'
     });
     setTimeout(function() {
-      req =
-        about.requestFullScreen ||
-        about.webkitRequestFullScreen ||
-        about.mozRequestFullScreen;
+    //   req =
+    //     about.requestFullScreen ||
+    //     about.webkitRequestFullScreen ||
+    //     about.mozRequestFullScreen;
 
       $('#dark-frame').animate({ opacity: 1 });
       $('#carousel').removeClass('hidden');
@@ -475,7 +476,7 @@ $(document).ready(function() {
       aboutGo();
     }, 400);
     setTimeout(function() {
-      req.call(about);
+    //   req.call(about);
 
       $('#on-top').animate({
         opacity: 0,
