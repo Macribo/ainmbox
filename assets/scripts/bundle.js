@@ -336,7 +336,7 @@ Buntús an tríal seo ná Spás digitach a
 
 <div style="animation:delay-fade-in 1s;">
 <li>
-<span id='One cannot'>Nach feidir</span><span id='give a neutral account'> tuairisc neodrach a thabhairt</span><span id='of the connections'> ar na caidreamh </span><span id='between'>idir</span><span id='language'> teanga</span><span id='and mind'> agus meabhair</span>
+<span id='One cannot'>Ní feidir</span><span id='give a neutral account'> tuairisc neodrach a thabhairt</span><span id='of the connections'> ar na caidreamh </span><span id='between'>idir</span><span id='language'> teanga</span><span id='and mind'> agus meabhair</span>
 </li>
 </div>
 <br>
