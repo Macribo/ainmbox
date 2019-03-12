@@ -40,8 +40,9 @@ body {
   src: url('../fonts/EagleLake.ttf');
 }
 #start {
-  z-index: 15000 !important;
+  z-index: 14000 !important;
 }
+
 #btn-menu,
 #blue-cape-menu,
 .test {
@@ -104,14 +105,7 @@ body {
 .col-6 {
   padding: 0;
 }
-#anseo {
-  display: none;
-  /* position:fixed; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index:9000; */
-}
+
 .col {
   display: flex;
   justify-content: center;
@@ -152,12 +146,8 @@ body {
 
 #skip {
   opacity: 0;
-  z-index: 8000;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10%;
+  pointer-events: none;
 }
 
 /* .amergin{

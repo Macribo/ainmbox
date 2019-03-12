@@ -161,6 +161,9 @@ test = ()=>{
 var about = document.getElementById('about');
 var start = document.getElementById('start');
 
+//make skip invisible to mouse while opacity 0//
+
+// 
 
 
 start.onclick = function() {
@@ -169,6 +172,11 @@ start.onclick = function() {
   );
 };
 
+skip.onclick= function(){
+window.location.replace(
+    './Untitled/index.html'
+    );
+}
 
 
 //load images into slides.
@@ -227,19 +235,22 @@ function goToSlide(number) {
 }
 
 $(document).ready(function() {
-  var amergin = document.getElementById('amergin');
-  slideEvent = () => {
-    switch (slideNumber) {
-      case 0:
-        console.log('The oldest Gaelic poem');
-        goToSlide(0);
-        amergin.pause();
-        $('#demo').fadeOut();
-        break;
+    var amergin = document.getElementById('amergin');
+    slideEvent = () => {
+        switch (slideNumber) {
+            case 0:
+            console.log('The oldest Gaelic poem');
+            goToSlide(0);
+            amergin.pause();
+            $('#demo').fadeOut();
+          
+            break;
+            
+            case 1:
+            console.log('an dán');
+            goToSlide(1);
+          
 
-      case 1:
-        console.log('an dán');
-        goToSlide(1);
 
         break;
       case 2:
@@ -416,7 +427,6 @@ $(document).ready(function() {
         goToSlide(32);
         $('#about').css({'display':'none'});
     $('#btn-menu').fadeTo('slow',1);
-    $('#btn-panel').animate({top:'65%'});
 
 
         break;
@@ -450,12 +460,24 @@ $(document).ready(function() {
   }
 
   aboutGo = () => {
-    $('#btn-menu').fadeOut();
-    aboutIsRunning = true;
-    goToSlide(0);setTimeout(function(){
-    $('#holdSlide').fadeTo('slow', 1);
-
+      aboutIsRunning = true;
+      goToSlide(0);setTimeout(function(){
+          $('#holdSlide').fadeTo('slow', 1);
+          
     },500)
+    $('#btn-panel').animate({top:'80%'});
+    setTimeout(function(){
+
+  $('#about').fadeOut();
+  $('#start').fadeOut();
+
+setTimeout(function(){
+    $('#skip').fadeTo('slow', 0.2);
+    $('#skip').css('pointer-events', 'auto');
+
+
+},500);
+    },1000)
     // $('#hold-frame').css('background-image', darkpic)
   };
 
