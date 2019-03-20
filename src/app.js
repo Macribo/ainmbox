@@ -450,7 +450,7 @@ $(document).ready(function() {
     setTimeout(changeSlide, wait);
     slideEvent();
     slideNumber++;
-  };
+     };
   changeSlide();
 
   if (playa) {
@@ -461,23 +461,30 @@ $(document).ready(function() {
 
   aboutGo = () => {
       aboutIsRunning = true;
-      goToSlide(0);setTimeout(function(){
+      goToSlide(0);
+      setTimeout(function(){
           $('#holdSlide').fadeTo('slow', 1);
           
-    },500)
-    $('#btn-panel').animate({top:'80%'});
+    },1000)
+setTimeout(function(){
+
+$('#btn-panel').animate({top:'80%'});
+},500);
+$('#btn-panel').animate({left:'35%'});
+
+   
+   
     setTimeout(function(){
 
-  $('#about').fadeOut();
-  $('#start').fadeOut();
-
-setTimeout(function(){
-    $('#skip').fadeTo('slow', 0.2);
-    $('#skip').css('pointer-events', 'auto');
-
-
-},500);
+        $('#about').fadeOut();
+        $('#start').fadeOut();
+        setTimeout(function(){
+            $('#skip').fadeTo('slow', 0.2);
+            $('#skip').css('pointer-events', 'auto');
+        },500);
     },1000)
+
+
     // $('#hold-frame').css('background-image', darkpic)
   };
 
