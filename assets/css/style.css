@@ -4,8 +4,19 @@ html {
   overflow: hidden;
 }
 
+.header {
+  margin-top: 20px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#btn-linkbox {
+  position: absolute;
+  top: 50%;
+}
 #main-bg {
-  background-image: url('../images/backgrounds/mainBG.png');
+  background-image: url('../images/backgrounds/2BG.png');
 
   background-size: 100% 100%;
   padding: 0;
