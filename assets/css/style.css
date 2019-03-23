@@ -198,6 +198,14 @@ html {
   align-items: center;
   text-align: center;
 }
+
+#btn-row {
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .fa-envelope {
   color: #daffce;
 }
