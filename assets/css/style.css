@@ -178,6 +178,8 @@ html {
   border-radius: 50%;
   height: 200px;
   width: 200px;
+  position: absolute;
+  animation: MoveUpDown 2s infinite;
 }
 #main-bg {
   background-image: url('../images/backgrounds/2BG.png');
@@ -201,11 +203,34 @@ html {
 
 #btn-row {
   display: flex;
-  padding-top: 150px;
+  /* border: 2px solid blue; */
+  /* padding-top: 150px; */
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .fa-envelope {
   color: #daffce;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 38%;
+  }
+  50% {
+    bottom: 40%;
+  }
+}
+@keyframes StopIt {
+  0%,
+  100% {
+    bottom: 39%;
+  }
+  50% {
+    bottom: 39%;
+  }
+}
+#btn-linkbox:hover {
+  animation: StopIt 2s linear infinite;
 }
