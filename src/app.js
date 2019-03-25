@@ -1,5 +1,5 @@
 $(document).ready(function() {
   $('#btn-linkbox').click(function() {
-    alert('click');
+    window.open('https://www.linkbox.io/ceartagnavegans');
   });
 });

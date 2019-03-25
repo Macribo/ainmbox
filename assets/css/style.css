@@ -6,8 +6,11 @@ html {
   overflow: hidden;
 }
 
-#header {
+#ainmbox {
+  /* border: 2px solid green; */
   width: 100%;
+  color: rgb(219, 213, 157);
+  padding: 10px 40px 0 40px;
   margin-top: 20px;
   align-content: center;
   justify-content: center;
