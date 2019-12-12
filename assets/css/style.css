@@ -247,7 +247,7 @@ html {
 }
 .land{
  position: fixed;
-  top:26%;
+  top:24%;
   left:13%;
-  zoom:1;
+  zoom:0.9;
 }
