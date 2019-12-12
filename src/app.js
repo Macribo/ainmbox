@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#btn-linkbox').click(function() {
-    window.open('https://www.linkbox.io/ceartagnavegans');
+  $('#btn-É0').click(function() {
+    window.open('../tall-order/index.html');
   });
 });

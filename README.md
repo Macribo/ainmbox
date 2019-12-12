@@ -1,5 +1,11 @@
 
-ainmBox is a test version of how to explain linkbox without cluttering-up the linkbox minimalist aesthetic.
-The idea is to make as graphic rich a presentation as we like - an simply link it back to linkbox. 
-The presentation can then be shared on social media, in appropiate contexts.
+Ní easpa Gaeilge is cúis len ár dúcheist Teanga,
+Ní de bhárr easpa spéis go bhfuil muid lag intí;
+
+cinnte ní de bharr easpa iarracht ach oiread.
+
+Samhlaigh ar feadh nóméad gur
+Spás fiorúl i nGaeilge
+B'feidir gur feidir
+Linn aithrú a spreagadh sa scéal
 

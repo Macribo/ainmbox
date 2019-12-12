@@ -175,7 +175,7 @@ html {
   transition: all 0.3s 1s ease-out;
 }
 
-#btn-linkbox {
+#btn-tall-order {
   /* position: absolute; */
   /* top: 30%; */
   border-radius: 50%;
@@ -234,6 +234,20 @@ html {
     bottom: 39%;
   }
 }
-#btn-linkbox:hover {
+#btn-tall-order:hover {
   animation: StopIt 2s linear infinite;
+}
+
+.btn-outline-success{
+  border-color:rgba(0,0,0,0);
+}
+
+#go-btn-img{
+  zoom:0.5;
+}
+.land{
+ position: fixed;
+  top:26%;
+  left:13%;
+  zoom:1;
 }
