@@ -5,7 +5,7 @@
 html {
   overflow: hidden;
 }
-
+body{background-color:black;}
 #ainmbox {
   /* border: 2px solid green; */
   width: 100%;
@@ -247,7 +247,11 @@ html {
 }
 .land{
  position: fixed;
-  top:24%;
-  left:13%;
-  zoom:0.9;
+  top:21%;
+  left:9%;
+  zoom:1;
+}
+#btn-tall-order{
+  left:45%;
+  zoom:0.4;
 }

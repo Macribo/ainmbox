@@ -7,4 +7,9 @@ $(document).ready(function () {
     req.call(temp);
     $('#btn-menu').fadeOut();
   }
+
+
+  $('#btn-tall-order').on('touchend', function(){
+    window.location.href = "https://macribo.github.io/tall-order/public/index.html";
+  })
 });
