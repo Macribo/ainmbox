@@ -175,7 +175,7 @@ body{background-color:black;}
   transition: all 0.3s 1s ease-out;
 }
 
-#btn-tall-order {
+#btn-tall-order, #btn-gaeilge {
   /* position: absolute; */
   /* top: 30%; */
   border-radius: 50%;
@@ -238,12 +238,16 @@ body{background-color:black;}
   animation: StopIt 2s linear infinite;
 }
 
+#btn-gaeilge:hover {
+  animation: StopIt 2s linear infinite;
+}
+
 .btn-outline-success{
   border-color:rgba(0,0,0,0);
 }
 
-#go-btn-img{
-  zoom:0.5;
+#go-btn-img, #go-btn-img2{
+  zoom:0.4;
 }
 .land{
  position: fixed;
@@ -251,7 +255,37 @@ body{background-color:black;}
   left:9%;
   zoom:1;
 }
-#btn-tall-order{
+#btn-tall-order, #btn-gaeilge{
   left:45%;
   zoom:0.4;
+}
+
+#btn-gaeilge{
+  /* top:45%; */
+}
+
+
+
+@media screen and (orientation:landscape) {
+
+#btn-gaeilge{
+  left:53%;
+}
+
+
+#btn-tall-order{
+  left:35%;
+}
+
+}
+
+@media screen and (orientation:portrait) {
+
+
+  #btn-gaeilge{
+    padding-bottom:35%;
+   }
+  #btn-tall-order{
+   padding-top:35%;
+  }
 }
