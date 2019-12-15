@@ -301,8 +301,21 @@ p{
   color:white;
   bottom:50%;}
   
-  #gael{
+  #gael, #auslander{
     margin-left:20px;
+    margin-top:0%;
+    font-size:3em;
+}
+#auslander{
+  margin-left:-9%;
+  margin-top:0%;
+  font-size:3em;
+}
 
+#gael{
+  margin-left:9%;
+  top:65%;
+  margin-top:0%;
+  font-size:3em;
 }
 }
