@@ -288,4 +288,21 @@ body{background-color:black;}
   #btn-tall-order{
    padding-top:35%;
   }
+
+  p{
+    position:fixed;
+    color:white;
+  bottom:50%;}
+}
+@media screen and (orientation:landscape) {
+
+p{
+  position:fixed;
+  color:white;
+  bottom:50%;}
+  
+  #gael{
+    margin-left:20px;
+
+}
 }
