@@ -277,24 +277,7 @@ body{background-color:black;}
   left:35%;
 }
 
-}
 
-@media screen and (orientation:portrait) {
-
-
-  #btn-gaeilge{
-    padding-bottom:35%;
-   }
-  #btn-tall-order{
-   padding-top:35%;
-  }
-
-  p{
-    position:fixed;
-    color:white;
-  bottom:50%;}
-}
-@media screen and (orientation:landscape) {
 
 p{
   position:fixed;
@@ -317,5 +300,64 @@ p{
   top:65%;
   margin-top:0%;
   font-size:3em;
+
 }
+  #main-bg{
+    background-image: url('../images/backgrounds/bg_Dark.png');
+
+  }
+}
+@media screen and (orientation:portrait) {
+
+  #main-bg {
+    background-image: url('../images/backgrounds/bg_dark_portrait.png');
+  
+    background-size: 100% 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  
+    overflow: hidden;
+    border: 2px solid green;
+    height: 100%;
+    width: 100%; 
+    background-size:cover;
+    /* background-repeat: no-repeat; */
+  }
+  p{
+    position:fixed;
+    color:white;
+    bottom:50%;}
+    
+    #gael, #auslander{
+      margin-left:20px;
+      margin-top:0%;
+      font-size:3em;
+  }
+  #auslander{
+    margin-left:1%;
+    padding-top:0%;
+    font-size:3em;
+  }
+  
+  #gael{
+    margin-left:1%;
+    top:70%;
+    margin-top:0%;
+    font-size:3em;
+  }
+
+  #btn-gaeilge{
+    padding-top:35%;
+   }
+  #btn-tall-order{
+   padding-bottom:43%;
+  }
+
+  p{
+    position:fixed;
+    color:white;
+  bottom:50%;}
+
+
 }
