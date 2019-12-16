@@ -213,7 +213,7 @@ body{background-color:black;}
   text-align: center;
 }
 .fa-envelope {
-  color: #daffce;
+  /* color: #daffce; */
 }
 
 @keyframes MoveUpDown {
