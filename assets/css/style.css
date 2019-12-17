@@ -290,6 +290,8 @@ p{
     font-size:3em;
 }
 .auslander{
+  display:inline-block;
+
   margin-left:-17%;
   margin-top:29%;
   font-size:3em;
@@ -307,6 +309,9 @@ p{
   margin-top:0%;
   font-size:3em;
 
+}
+#each{
+  padding-bottom:0%;
 }
   #main-bg{
     background-image: url('../images/backgrounds/bg_Dark.png');
