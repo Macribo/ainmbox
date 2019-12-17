@@ -284,15 +284,21 @@ p{
   color:white;
   bottom:50%;}
   
-  #gael, #auslander{
+  #gael, .auslander{
     margin-left:20px;
     margin-top:0%;
     font-size:3em;
 }
-#auslander{
-  margin-left:-9%;
-  margin-top:0%;
+.auslander{
+  margin-left:-17%;
+  margin-top:29%;
   font-size:3em;
+  height:200px;
+  width:200px;
+  color:white;
+  line-height:1em;
+
+  /* border:3px solid green; */
 }
 
 #gael{
@@ -329,12 +335,13 @@ p{
     color:white;
     bottom:50%;}
     
-    #gael, #auslander{
+    #gael, .auslander{
       margin-left:20px;
       margin-top:0%;
       font-size:3em;
   }
-  #auslander{
+  .auslander{
+    color:white;
     margin-left:1%;
     padding-top:0%;
     font-size:3em;
