@@ -318,7 +318,7 @@ p{
     position: absolute;
   
     overflow: hidden;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: 100%;
     width: 100%; 
     background-size:cover;
