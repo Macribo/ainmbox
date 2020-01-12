@@ -346,14 +346,14 @@ body{background-color:black;}
   
     background-size: 100% 100%;
     padding: 0;
-    margin-top: 0.5%;
-    margin-left: 0.5%;
+    margin-top: 0%;
+    margin-left: 0%;
     position: fixed;
   
     overflow: hidden;
     /* border: 2px solid green; */
     /* height: 70%; */
-    width: 70%; 
+    width: 100%; 
     background-size:contain;
     background-repeat: no-repeat;
   }
