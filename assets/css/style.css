@@ -269,12 +269,13 @@ body{background-color:black;}
 @media screen and (orientation:landscape) {
 
 #btn-gaeilge{
-  left:53%;
+  /* left:53%; */
 }
 
 
 #btn-tall-order{
-  left:35%;
+  /* left:35%; */
+
 }
 
 
@@ -309,6 +310,21 @@ p{
 }
 @media screen and (orientation:portrait) {
 
+
+  #btn-tall-order{
+    margin-bottom:1%;
+  }
+   #btn-gaeilge{
+   /* padding-bottom:43%; */
+   margin-bottom:50%;  
+  
+   } 
+   #btn-eile{
+       /* padding-bottom:43%; */
+   margin-bottom:-49%;
+  
+   }
+
   #main-bg {
     background-image: url('../images/backgrounds/bg_dark_portrait.png');
   
@@ -321,8 +337,8 @@ p{
     /* border: 2px solid green; */
     height: 100%;
     width: 100%; 
-    background-size:cover;
-    /* background-repeat: no-repeat; */
+    background-size:contain;
+    background-repeat: no-repeat;
   }
   p{
     position:fixed;
@@ -332,27 +348,31 @@ p{
     #gael, #auslander, #eile{
       margin-left:20px;
       margin-top:0%;
-      font-size:3em;
+      font-size:4em;
+
   }
   #auslander{
-    margin-left:1%;
-    padding-top:0%;
-    font-size:3em;
-    height:200px;
-  }
+    margin-left:3%;
+    top:15%;
+    
+    }
   
   #gael{
-    margin-left:1%;
-    top:70%;
+    margin-left:3%;
+    top:23%;
     margin-top:0%;
-    font-size:3em;
   }
-
+#eile{
+  margin-left:3%;
+  top:70%;
+  margin-top:0%;
+}
   #btn-gaeilge{
-    padding-top:35%;
+    /* padding-top:35%; */
    }
-  #btn-tall-order{
-   padding-bottom:43%;
+  #btn-tall-order,#btn-gaeilge,#btn-gaeilge{
+
+  
   }
 
   p{
