@@ -274,8 +274,8 @@ body{background-color:black;}
     width: 100%;
     color: rgb(219, 213, 157);
     padding: 0% 0% ;
-    margin-top: 2%;
-    margin-left: -25%;
+    margin-top: 6%;
+    margin-left: 0%;
     align-content: center;
     justify-content: center;
     text-align: center;
@@ -286,13 +286,12 @@ body{background-color:black;}
   
   
   #gael, #auslander, #eile{
-    margin-left:0%;
     margin-top:36%;
-    font-size:1.2em;
+    font-size:1.8em;
     position:fixed;
-    top:15%;
+    top:54%;
     margin-top:11%;
-    left:0%;
+    left:9%;
     
     /* position:fixed; */
     /* z-index:500; */
@@ -304,7 +303,7 @@ body{background-color:black;}
   
   
  #auslander{
-   margin-left:22%;
+   margin-left:39%;
    
    }
  
@@ -312,20 +311,7 @@ body{background-color:black;}
    margin-left:8%;
  }
  #eile{
- margin-left:35%;
- }
-  #btn-gaeilge{
-    /* padding-bottom:43%; */
-    margin-bottom:50%;  
-    left:-10%;
-    z-index:51;
-  } 
-  #btn-eile{
-     /* padding-bottom:43%; */
- margin-bottom:-19%;
- left:16%; 
- z-index: 50;
-
+ margin-left:69%;
  }
 
 
@@ -337,8 +323,19 @@ body{background-color:black;}
   }
 
   #btn-tall-order{
-   left:3%;
+   left:30%;
   }
+  #btn-gaeilge{
+    /* padding-bottom:43%; */
+    left:0%;
+    z-index:51;
+  } 
+  #btn-eile{
+     /* padding-bottom:43%; */
+ left:60%; 
+ z-index: 55;
+
+ }
 
   #main-bg{
     background-image: url('../images/backgrounds/bg_Dark.png');
