@@ -175,7 +175,7 @@ body{background-color:black;}
   transition: all 0.3s 1s ease-out;
 }
 
-#btn-tall-order, #btn-gaeilge {
+#btn-tall-order, #btn-gaeilge, #btn-eile {
   /* position: absolute; */
   /* top: 30%; */
   border-radius: 50%;
@@ -255,9 +255,9 @@ body{background-color:black;}
   left:9%;
   zoom:1;
 }
-#btn-tall-order, #btn-gaeilge{
-  left:45%;
-  zoom:0.4;
+#btn-tall-order, #btn-gaeilge, #btn-eile{
+  left:12%;
+  zoom:4;
 }
 
 #btn-gaeilge{
@@ -329,7 +329,7 @@ p{
     color:white;
     bottom:50%;}
     
-    #gael, #auslander{
+    #gael, #auslander, #eile{
       margin-left:20px;
       margin-top:0%;
       font-size:3em;
@@ -338,6 +338,7 @@ p{
     margin-left:1%;
     padding-top:0%;
     font-size:3em;
+    height:200px;
   }
   
   #gael{
