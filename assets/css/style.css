@@ -268,45 +268,96 @@ body{background-color:black;}
 
 @media screen and (orientation:landscape) {
 
-#btn-gaeilge{
-  /* left:53%; */
-}
 
-
-#btn-tall-order{
-  /* left:35%; */
-
-}
-
-
-
-p{
-  position:fixed;
-  color:white;
-  bottom:50%;}
+  #ainmbox {
+    /* border: 2px solid green; */
+    width: 100%;
+    color: rgb(219, 213, 157);
+    padding: 0% 0% ;
+    margin-top: 2%;
+    margin-left: -25%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+ 
+   
   
-  #gael, #auslander{
-    margin-left:20px;
-    margin-top:0%;
-    font-size:3em;
-}
-#auslander,
-#gael{
-  margin-left:9%;
-  top:65%;
-  margin-top:0%;
-  font-size:3em;
+  
+  
+  #gael, #auslander, #eile{
+    margin-left:0%;
+    margin-top:36%;
+    font-size:1.2em;
+    position:fixed;
+    top:15%;
+    margin-top:11%;
+    left:0%;
+    
+    /* position:fixed; */
+    /* z-index:500; */
+    /* margin-left:20px; */
+    /* margin-top:0%; */
+    
+  }
+  
+  
+  
+ #auslander{
+   margin-left:22%;
+   
+   }
+ 
+ #gael{
+   margin-left:8%;
+ }
+ #eile{
+ margin-left:35%;
+ }
+  #btn-gaeilge{
+    /* padding-bottom:43%; */
+    margin-bottom:50%;  
+    left:-10%;
+    z-index:51;
+  } 
+  #btn-eile{
+     /* padding-bottom:43%; */
+ margin-bottom:-19%;
+ left:16%; 
+ z-index: 50;
 
-}
-#auslander{
+ }
 
-  margin-left:-9%;
 
-}
+  #btn-tall-order,#btn-gaeilge,#btn-eile{
+    margin-bottom:-19%;
+    zoom:2;
+    margin-left:0%;
+
+  }
+
+  #btn-tall-order{
+   left:3%;
+  }
+
   #main-bg{
     background-image: url('../images/backgrounds/bg_Dark.png');
 
+  
+    background-size: 100% 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+  
+    overflow: hidden;
+    /* border: 2px solid green; */
+    height: 47%;
+    width: 100%; 
+    background-size:contain;
+    background-repeat: no-repeat;
   }
+
+ 
 }
 @media screen and (orientation:portrait) {
 
