@@ -1,0 +1,100 @@
+/*!
+ * Start Bootstrap - The Big Picture (https://startbootstrap.com/template-overviews/the-big-picture)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
+ */
+
+ body {
+  background: url('../assets/images/backgrounds/bg_Dark.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.title{
+    
+  color:white;
+}
+
+#gael,#auslander,#eile{
+  position: fixed;
+  z-index:40;
+  color:white;
+}
+#btn-tall-order, #btn-gaeilge, #btn-eile {
+  animation: MoveUpDown 2s infinite;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    padding-top: 38%;
+  }
+  50% {
+    padding-top: 40%;
+  }
+}
+@keyframes StopIt {
+  0%,
+  100% {
+    padding-top: 39%;
+  }
+  50% {
+    padding-top: 39%;
+  }
+}
+#btn-tall-order:hover,#btn-eile:hover,#btn-gaeilge:hover {
+  animation: StopIt 2s linear infinite;
+}
+
+
+    .col-sm{
+      text-align: center;
+      /* border:1px solid orange; */
+      
+    }
+
+ @media only screen and (orientation:landscape){
+  body {
+    background: url('../assets/images/backgrounds/bg_Dark.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+  #gael,#auslander,#eile{
+  top:80%;}  
+  
+  #gael{left:15%;}
+  #auslander{left:49%;}
+  #eile{left:79%;}
+}
+
+@media only screen and (orientation:portrait){
+  
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    padding-top: 18%;
+  }
+  50% {
+    padding-top: 20%;
+  }
+}
+  
+  
+  #gael{top:33%;}
+  #auslander{top:56%;}
+  #eile{top:81%;}
+  body{
+      background: url('../assets/images/backgrounds/bg_dark_portrait.png') no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      -o-background-size: cover;
+    }
+
+
+}

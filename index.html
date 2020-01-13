@@ -1,78 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
+  <title>Big Picture</title>
 
-  <html lang="ga" xmlns="http://www.w3.org/1999/xhtml">
-  <meta charset="UTF-8" name="viewport" content="minimal-ui", width="device-width", initial-scale=1, maximum-scale=1>
-  <!-- <script src="./scripts/typeWriter.js-master/typeWriter.js"></script> -->
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
-  <meta name='apple-mobile-web-app-capable' content='yes' />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Custom styles for this template -->
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+  <link href="css/the-big-picture.css" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-
-  <script src="./assets/scripts/jquery.js"></script>
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>AinmBox</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
-<script>
-  function loadIt() {
-    setTimeout(function () {
-      var body = document.getElementById('toLoad');
-      body.className += 'loaded';
-      console.log("load spinner visible?")
-    }, 000); //add for curtains intro
-  }
 
-</script>
+<body>
 
-<body onload="loadIt()" id="toLoad">
+  <!-- Page Content -->
+    <div class="container-fluid">
+<div class="row title justify-content-center centered">
+  <h1>menu</h1>  
+  <p id="auslander">Gall</p>
+  <p id="gael">Gael</p>
+  <p id="eile">Eile/Other</p>
+</div>
 
-  <!-- <img src="./assets/images/backgrounds/3BG.png" alt="" class="land">        <div class="row" id="main-bg"> -->
-            <div id="loader-wrapper">
-                <div id="loader"></div>
-                <div class="loader-section section-left">
-                </div>
-                <div class="loader-section section-right"></div>
-            </div>
-             <div  id="main-bg">
-
-            <div  id='ainmbox'>
-                    <h2>M E N U </h2>
-                </div>
-            <div class="row" id="btn-row">
-
-                <Button id="btn-tall-order" class="btn" ><img id="go-btn-img"src="./assets/images/0.png"></Button>
-                <p id="auslander">Gall</p>
-                <Button id="btn-gaeilge" class="btn" ><img id="go-btn-img2"src="./assets/images/1.png"></Button>
-                <p id="gael">Gael</p>
-                <Button id="btn-eile" class="btn" ><img id="go-btn-img2"src="./assets/images/2.png"></Button>
-                <p id="eile">Eile<br/><p style="opacity= 0.5"></p></p>
-            </div>
-            <div class="row" id="btn-label-row">
-            
+      <div class="row">
+        <div class="col-sm">
+          <Button id="btn-gaeilge" class="btn" onclick="location.href='https://macribo.github.io/ritt_web/index.html'"><img id="go-btn-img2"src="./assets/images/1.png"></Button>
+        </div>
+        <div class="col-sm">
+          <Button id="btn-tall-order" class="btn" onclick="location.href='https://macribo.github.io/char_select/public/index.html'" ><img id="go-btn-img"src="./assets/images/0.png"></Button>
+        </div>
+        <div class="col-sm">
+          <Button id="btn-eile" class="btn"  onclick="location.href='https://macribo.github.io/char_select/public/index.html'"><img id="go-btn-img2"src="./assets/images/2.png"></Button>
 
         </div>
-      </div> <!-- close hold-frame-->
+      </div>
 
-  <!-- <link rel="stylesheet" href="./css/animate.min.css"> -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-    crossorigin="anonymous"></script>
-
-
+    </div>
+    
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
-<script src="./src/app.js"></script>
 
 </html>
