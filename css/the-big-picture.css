@@ -99,7 +99,7 @@ h1{
     }
 
     body{
-      background-color:black;
+
 }
 #stretch{
   position:fixed;
@@ -113,8 +113,17 @@ h1{
     background-repeat: no-repeat;
 /* background-size: contain; */
 z-index: -1;
-}
+min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+min-height: 100vh; /* These two lines are counted as one :-)       */
 
+display: flex;
+align-items: center;
+background-color:black;
+
+}
+.row{
+ 
+}
 p{
   margin-top:13px;
   font-size: 1em;
