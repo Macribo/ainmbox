@@ -3,6 +3,8 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
+ @font-face { font-family: 'aonchlo'; src: url('../assets/fonts/aonchlo.ttf'); } 
+ @font-face { font-family: 'urchlo'; src: url('../assets/fonts/Urchlo\ Romhanach.ttf'); } 
 
  body {
   background: url('../assets/images/backgrounds/bg_Dark.png') no-repeat center center fixed;
@@ -18,12 +20,24 @@
   color:white;
 }
 
+h1{
+  position: fixed;
+  bottom:5%;
+  z-index:50;
+  margin-top:5px;
+  font-family: urchlo;
+}
 #gael,#auslander,#eile{
   /* position: fixed; */
   /* z-index:40; */
   color:white;
+  color:goldenrod;
+
 }
 
+#gael{
+  font-family: aonchlo;
+}
 
 
 
@@ -49,7 +63,9 @@
   #eile{left:79%;} */
 
   #btn-tall-order, #btn-gaeilge, #btn-eile {  
-    margin-top: 15%
+    margin-top: 15%;
+    zoom:1.0;
+
   }
 
 }
@@ -57,7 +73,9 @@
 @media only screen and (orientation:portrait){
 
   #btn-tall-order, #btn-gaeilge, #btn-eile {  
-    margin-top: 5%
+    margin-top: 10%;
+    zoom:0.7;
+
   }
 /*    
     
@@ -74,5 +92,9 @@
       -o-background-size: cover;
     }
 
-
+p{
+  margin-top:13px;
+  font-size: 1em;
+  color:goldenrod;
+}
 }
