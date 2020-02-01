@@ -3,16 +3,10 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-the-big-picture/blob/master/LICENSE)
  */
+
+ 
  @font-face { font-family: 'aonchlo'; src: url('../assets/fonts/aonchlo.ttf'); } 
  @font-face { font-family: 'urchlo'; src: url('../assets/fonts/Urchlo\ Romhanach.ttf'); } 
-
- body {
-  background: url('../assets/images/backgrounds/bg_Dark.png') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
 
 
 .title{
@@ -76,6 +70,8 @@ h1{
     margin-top: 10%;
     zoom:0.7;
 
+  
+
   }
 /*    
     
@@ -85,12 +81,39 @@ h1{
     #auslander{top:56%;}
     #eile{top:81%;} */
   body{
-      background: url('../assets/images/backgrounds/bg_dark_portrait.png') no-repeat center center fixed;
+      /* background: url('../assets/images/backgrounds/bg_dark_portrait.png') no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
-      -o-background-size: cover;
+      -o-background-size: cover; 
+      
+
+        .stretch{}
+    background: url('../assets/images/backgrounds/bg_Dark.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+      
+      */
     }
+
+    body{
+      background-color:black;
+}
+#stretch{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+ /* border:2px solid green; */
+      /* position: absolute; */
+  background: url('../assets/images/backgrounds/bg_dark_portrait.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+/* background-size: contain; */
+z-index: -1;
+}
 
 p{
   margin-top:13px;
